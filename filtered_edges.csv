@@ -1,0 +1,485 @@
+Source,Target
+"last, position, indicate",question
+"last, position, indicate",clearly
+"last, position, indicate",film
+"last, position, indicate",increase
+"last, position, indicate",tend
+"last, position, indicate",board
+"last, position, indicate",figure
+"last, position, indicate",want
+"last, position, indicate",fill
+"last, position, indicate",area
+"last, position, indicate",hard
+"last, position, indicate",side
+"last, position, indicate",former
+"last, position, indicate",deal
+"last, position, indicate",low
+"last, position, indicate",player
+"last, position, indicate",bad
+"last, position, indicate",series
+"last, position, indicate",cultural
+"last, position, indicate",current
+"last, position, indicate",media
+"last, position, indicate",fire
+"skin, business, nice",clearly
+"skin, business, nice",want
+"skin, business, nice",question
+"skin, business, nice",tend
+"skin, business, nice",side
+"skin, business, nice",increase
+"skin, business, nice",low
+"skin, business, nice",media
+"skin, business, nice",former
+"skin, business, nice",board
+"skin, business, nice",deal
+"skin, business, nice",area
+"kitchen, small, wall",low
+"kitchen, small, wall",tend
+"kitchen, small, wall",fire
+"kitchen, small, wall",hard
+"kitchen, small, wall",fill
+"kitchen, small, wall",series
+"kitchen, small, wall",former
+"kitchen, small, wall",media
+"kitchen, small, wall",deal
+"kitchen, small, wall",film
+tend,"painting, artist, art"
+tend,noise
+tend,fire
+tend,"daughter, father, son"
+tend,"marriage, husband, wife"
+tend,"democrat, republican, democratic"
+tend,current
+tend,media
+tend,low
+tend,"film, movie, size"
+tend,"fish, relate, music"
+tend,bad
+tend,"church, religious, despite"
+tend,"gun, citizen, stock"
+tend,hard
+tend,board
+tend,"southern, south, reality"
+tend,figure
+tend,"dog, animal, pattern"
+tend,"fly, collection, travel"
+tend,want
+tend,"oil, wife, should"
+tend,film
+tend,"hair, speech, hundred"
+tend,fill
+"marriage, husband, wife",deal
+"marriage, husband, wife",want
+"marriage, husband, wife",hard
+"marriage, husband, wife",cultural
+"marriage, husband, wife",side
+"marriage, husband, wife",bad
+"marriage, husband, wife",fire
+"marriage, husband, wife",increase
+"marriage, husband, wife",current
+"marriage, husband, wife",area
+"marriage, husband, wife",film
+"marriage, husband, wife",question
+"marriage, husband, wife",low
+"marriage, husband, wife",fill
+"marriage, husband, wife",figure
+"marriage, husband, wife",clearly
+"marriage, husband, wife",former
+"marriage, husband, wife",player
+"marriage, husband, wife",media
+"marriage, husband, wife",board
+noise,series
+noise,former
+noise,increase
+noise,cultural
+noise,player
+noise,area
+noise,hard
+noise,figure
+noise,media
+noise,board
+noise,fire
+noise,low
+noise,current
+noise,clearly
+noise,fill
+noise,side
+noise,film
+noise,bad
+noise,want
+noise,deal
+noise,question
+clearly,film
+clearly,"film, movie, size"
+clearly,fill
+clearly,"dog, animal, pattern"
+clearly,"tax, network, himself"
+clearly,"church, religious, despite"
+clearly,figure
+clearly,"song, music, sing"
+clearly,low
+clearly,"drug, service, seven"
+clearly,media
+clearly,"hair, speech, hundred"
+clearly,want
+clearly,"democrat, republican, democratic"
+clearly,series
+clearly,"fly, collection, travel"
+clearly,"cell, sometimes, guess"
+clearly,"daughter, father, son"
+clearly,"fish, relate, music"
+clearly,"gun, citizen, stock"
+clearly,"oil, wife, should"
+clearly,"radio, space, hundred"
+clearly,board
+clearly,fire
+clearly,former
+player,"radio, space, hundred"
+player,fill
+player,"painting, artist, art"
+player,hard
+player,"dog, animal, pattern"
+player,"hair, speech, hundred"
+player,"glass, window, senior"
+player,"film, movie, size"
+player,"daughter, father, son"
+player,"tax, network, himself"
+player,"fly, collection, travel"
+player,"church, religious, despite"
+player,"song, music, sing"
+player,"southern, south, reality"
+player,"drug, service, seven"
+player,"oil, wife, should"
+player,board
+player,question
+player,"fish, relate, music"
+player,"democrat, republican, democratic"
+player,former
+player,want
+player,area
+player,side
+bad,"tax, network, himself"
+bad,"dog, animal, pattern"
+bad,"fish, relate, music"
+bad,"song, music, sing"
+bad,"gun, citizen, stock"
+bad,"radio, space, hundred"
+bad,"oil, wife, should"
+bad,media
+bad,"daughter, father, son"
+bad,fill
+bad,"film, movie, size"
+bad,"southern, south, reality"
+bad,want
+bad,"democrat, republican, democratic"
+bad,former
+bad,deal
+bad,side
+bad,"cell, sometimes, guess"
+bad,hard
+"oil, wife, should",area
+"oil, wife, should",current
+"oil, wife, should",media
+"oil, wife, should",cultural
+"oil, wife, should",side
+"oil, wife, should",series
+"oil, wife, should",question
+"oil, wife, should",want
+"oil, wife, should",deal
+"oil, wife, should",figure
+"oil, wife, should",board
+"oil, wife, should",fire
+low,"tax, network, himself"
+low,"drug, service, seven"
+low,"blood, better, analysis"
+low,current
+low,"dog, animal, pattern"
+low,"film, movie, size"
+low,"eye, mind, myself"
+low,"glass, window, senior"
+low,side
+low,"southern, south, reality"
+low,"democrat, republican, democratic"
+low,"church, religious, despite"
+low,film
+low,"painting, artist, art"
+low,"cell, sometimes, guess"
+low,"daughter, father, son"
+low,"song, music, sing"
+low,fire
+low,fill
+low,want
+low,cultural
+"dog, animal, pattern",question
+"dog, animal, pattern",former
+"dog, animal, pattern",series
+"dog, animal, pattern",deal
+"dog, animal, pattern",hard
+"dog, animal, pattern",current
+"dog, animal, pattern",fire
+"dog, animal, pattern",cultural
+"dog, animal, pattern",side
+"dog, animal, pattern",area
+"dog, animal, pattern",figure
+"dog, animal, pattern",want
+"dog, animal, pattern",fill
+"dog, animal, pattern",increase
+"dog, animal, pattern",film
+"dog, animal, pattern",board
+"dog, animal, pattern",media
+"eye, mind, myself",deal
+"eye, mind, myself",side
+"eye, mind, myself",fire
+"eye, mind, myself",cultural
+"eye, mind, myself",hard
+"eye, mind, myself",series
+"eye, mind, myself",current
+"eye, mind, myself",question
+"eye, mind, myself",figure
+"eye, mind, myself",increase
+figure,"tax, network, himself"
+figure,"democrat, republican, democratic"
+figure,"glass, window, senior"
+figure,fill
+figure,"gun, citizen, stock"
+figure,want
+figure,"church, religious, despite"
+figure,"film, movie, size"
+figure,"fish, relate, music"
+figure,"hair, speech, hundred"
+figure,question
+figure,board
+figure,"painting, artist, art"
+figure,deal
+figure,"radio, space, hundred"
+figure,former
+figure,"daughter, father, son"
+media,"tax, network, himself"
+media,"cell, sometimes, guess"
+media,"hair, speech, hundred"
+media,area
+media,"drug, service, seven"
+media,"democrat, republican, democratic"
+media,"gun, citizen, stock"
+media,"blood, better, analysis"
+media,cultural
+media,"song, music, sing"
+media,"fish, relate, music"
+media,"daughter, father, son"
+media,fill
+media,"church, religious, despite"
+media,"film, movie, size"
+media,want
+media,"painting, artist, art"
+current,"democrat, republican, democratic"
+current,"film, movie, size"
+current,want
+current,"tax, network, himself"
+current,"fish, relate, music"
+current,"southern, south, reality"
+current,"radio, space, hundred"
+current,"hair, speech, hundred"
+current,"blood, better, analysis"
+current,"painting, artist, art"
+current,area
+current,"daughter, father, son"
+current,"church, religious, despite"
+current,"fly, collection, travel"
+current,"cell, sometimes, guess"
+current,"glass, window, senior"
+"glass, window, senior",side
+"glass, window, senior",cultural
+"glass, window, senior",area
+"glass, window, senior",former
+"glass, window, senior",fill
+"glass, window, senior",board
+"glass, window, senior",fire
+side,"democrat, republican, democratic"
+side,"daughter, father, son"
+side,"fish, relate, music"
+side,"film, movie, size"
+side,"tax, network, himself"
+side,"painting, artist, art"
+side,question
+side,fire
+side,"song, music, sing"
+side,"church, religious, despite"
+side,deal
+side,area
+side,"drug, service, seven"
+side,"radio, space, hundred"
+side,film
+fill,"fish, relate, music"
+fill,"tax, network, himself"
+fill,"fly, collection, travel"
+fill,"church, religious, despite"
+fill,"democrat, republican, democratic"
+fill,"film, movie, size"
+fill,"cell, sometimes, guess"
+fill,"song, music, sing"
+fill,question
+fill,"daughter, father, son"
+fill,"southern, south, reality"
+fill,"blood, better, analysis"
+fill,"drug, service, seven"
+fill,"gun, citizen, stock"
+fill,increase
+fill,cultural
+fill,"painting, artist, art"
+cultural,"film, movie, size"
+cultural,"blood, better, analysis"
+cultural,series
+cultural,"tax, network, himself"
+cultural,"church, religious, despite"
+cultural,"democrat, republican, democratic"
+cultural,"fish, relate, music"
+cultural,"drug, service, seven"
+cultural,"cell, sometimes, guess"
+cultural,"song, music, sing"
+cultural,"fly, collection, travel"
+cultural,"hair, speech, hundred"
+cultural,"southern, south, reality"
+cultural,film
+cultural,question
+"blood, better, analysis",increase
+"blood, better, analysis",deal
+"blood, better, analysis",area
+"blood, better, analysis",want
+"blood, better, analysis",question
+"blood, better, analysis",hard
+"blood, better, analysis",series
+"blood, better, analysis",film
+"song, music, sing",increase
+"song, music, sing",question
+"song, music, sing",film
+"song, music, sing",board
+"song, music, sing",former
+"song, music, sing",want
+"song, music, sing",area
+"song, music, sing",hard
+"song, music, sing",series
+"song, music, sing",fire
+"hair, speech, hundred",increase
+"hair, speech, hundred",fire
+"hair, speech, hundred",film
+"hair, speech, hundred",area
+"hair, speech, hundred",deal
+"hair, speech, hundred",want
+"hair, speech, hundred",hard
+board,increase
+board,area
+board,"film, movie, size"
+board,"democrat, republican, democratic"
+board,"tax, network, himself"
+board,"church, religious, despite"
+board,"daughter, father, son"
+board,"southern, south, reality"
+board,film
+board,"painting, artist, art"
+board,"fish, relate, music"
+board,"gun, citizen, stock"
+board,hard
+"democrat, republican, democratic",increase
+"democrat, republican, democratic",deal
+"democrat, republican, democratic",series
+"democrat, republican, democratic",film
+"democrat, republican, democratic",fire
+"democrat, republican, democratic",former
+"democrat, republican, democratic",hard
+"democrat, republican, democratic",area
+"democrat, republican, democratic",want
+"democrat, republican, democratic",question
+"tax, network, himself",former
+"tax, network, himself",deal
+"tax, network, himself",area
+"tax, network, himself",question
+"tax, network, himself",fire
+"tax, network, himself",series
+"tax, network, himself",film
+"tax, network, himself",hard
+"tax, network, himself",increase
+fire,"fish, relate, music"
+fire,"painting, artist, art"
+fire,"cell, sometimes, guess"
+fire,"daughter, father, son"
+fire,"film, movie, size"
+fire,"church, religious, despite"
+fire,"drug, service, seven"
+"southern, south, reality",film
+"southern, south, reality",increase
+"southern, south, reality",area
+"southern, south, reality",deal
+"southern, south, reality",question
+want,increase
+want,deal
+want,"fish, relate, music"
+want,"church, religious, despite"
+want,"gun, citizen, stock"
+want,"daughter, father, son"
+want,"film, movie, size"
+want,area
+want,former
+want,"drug, service, seven"
+want,"fly, collection, travel"
+want,"radio, space, hundred"
+"film, movie, size",series
+"film, movie, size",increase
+"film, movie, size",deal
+"film, movie, size",former
+"film, movie, size",film
+"film, movie, size",hard
+"film, movie, size",question
+"film, movie, size",area
+"fish, relate, music",deal
+"fish, relate, music",series
+"fish, relate, music",question
+"fish, relate, music",hard
+"church, religious, despite",film
+"church, religious, despite",increase
+"church, religious, despite",area
+"church, religious, despite",question
+"church, religious, despite",former
+"church, religious, despite",series
+"church, religious, despite",hard
+"cell, sometimes, guess",series
+"cell, sometimes, guess",hard
+"cell, sometimes, guess",question
+"cell, sometimes, guess",increase
+area,"radio, space, hundred"
+area,former
+area,series
+area,"painting, artist, art"
+area,film
+area,increase
+film,"daughter, father, son"
+film,"radio, space, hundred"
+film,increase
+film,"gun, citizen, stock"
+film,"drug, service, seven"
+film,series
+hard,"radio, space, hundred"
+hard,question
+hard,increase
+hard,former
+hard,"daughter, father, son"
+hard,"drug, service, seven"
+hard,series
+"gun, citizen, stock",deal
+"gun, citizen, stock",increase
+series,"radio, space, hundred"
+series,former
+series,"drug, service, seven"
+former,"painting, artist, art"
+former,"daughter, father, son"
+former,deal
+former,"radio, space, hundred"
+former,question
+former,"drug, service, seven"
+"drug, service, seven",question
+"fly, collection, travel",question
+"fly, collection, travel",increase
+question,"radio, space, hundred"
+deal,"daughter, father, son"
+deal,"painting, artist, art"
+increase,"daughter, father, son"
+increase,"painting, artist, art"
