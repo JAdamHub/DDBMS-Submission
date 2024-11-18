@@ -19,3 +19,4 @@ transformers
 gradio
 pyvis 
 spacy
+xgboost
