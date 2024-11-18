@@ -20,3 +20,7 @@ gradio
 pyvis 
 spacy
 xgboost
+umap
+bertopic
+plotly
+nbformat
