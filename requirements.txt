@@ -3,10 +3,7 @@ requests
 beautifulsoup4
 openai
 pydantic
-wikipedia-api
-holoviews
 python-louvain
-hvplot
 numpy
 pandas
 seaborn
@@ -20,4 +17,6 @@ scikit-learn
 torch
 transformers
 gradio
-requests
+pyvis 
+spacy
+xgboost
