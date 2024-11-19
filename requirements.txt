@@ -24,3 +24,4 @@ umap
 bertopic
 plotly
 nbformat
+tiktoken
