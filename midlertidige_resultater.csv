@@ -13979,3 +13979,3176 @@ Note: The tweets provided are examples and may not necessarily reflect the opini
         ""contains_mentions"": true
     }
 }",
+60,"Here is the output in JSON format:
+
+```json
+{
+    ""themes"": [
+        {
+            ""name"": ""Politics and Current Events"",
+            ""confidence"": 85,
+            ""sub_themes"": [
+                ""Politics"",
+                ""Current Events"",
+                ""Government"",
+                ""Politics in the US""
+            ],
+            ""keywords"": [
+                ""Hillary Clinton"",
+                ""US Government"",
+                ""Politics in the US"",
+                ""Government in the US""
+            ],
+            ""sentiment"": ""neutral""
+        },
+        {
+            ""name"": ""Entertainment and Culture"",
+            ""confidence"": 80,
+            ""sub_themes"": [
+                ""Movies"",
+                ""Music"",
+                ""Celebrities"",
+                ""Culture""
+            ],
+            ""keywords"": [
+                ""Jeff Goldblum"",
+                ""Chester Bennington"",
+                ""Music"",
+                ""Movies""
+            ],
+            ""sentiment"": ""positive""
+        },
+        {
+            ""name"": ""Technology and Science"",
+            ""confidence"": 78,
+            ""sub_themes"": [
+                ""Technology"",
+                ""Science"",
+                ""Space Exploration""
+            ],
+            ""keywords"": [
+                ""Red Dead Redemption 2"",
+                ""Robot"",
+                ""Space Exploration"",
+                ""Technology""
+            ],
+            ""sentiment"": ""neutral""
+        },
+        {
+            ""name"": ""Social Media and Relationships"",
+            ""confidence"": 75,
+            ""sub_themes"": [
+                ""Social Media"",
+                ""Relationships"",
+                ""Friends""
+            ],
+            ""keywords"": [
+                ""Twitter"",
+                ""Friendship"",
+                ""Social Media"",
+                ""Relationships""
+            ],
+            ""sentiment"": ""positive""
+        },
+        {
+            ""name"": ""Health and Wellness"",
+            ""confidence"": 70,
+            ""sub_themes"": [
+                ""Health"",
+                ""Wellness"",
+                ""Fitness""
+            ],
+            ""keywords"": [
+                ""Cancer"",
+                ""Chemo"",
+                ""Health"",
+                ""Wellness""
+            ],
+            ""sentiment"": ""neutral""
+        }
+    ],
+    ""metadata"": {
+        ""tweet_length"": 100,
+        ""language"": ""en"",
+        ""contains_hashtags"": true,
+        ""contains_mentions"": true
+    }
+}
+```
+
+Here's a breakdown of the output:
+
+*   The main themes identified are Politics and Current Events, Entertainment and Culture, Technology and Science, Social Media and Relationships, and Health and Wellness.
+*   The confidence level for each theme is between 70 and 85, indicating a moderate to high level of confidence in the theme extraction.
+*   The sub-themes for each main theme provide more specific categories within the main theme.
+*   The keywords for each theme are key terms that support the theme and can be used for further analysis.
+*   The sentiment for each theme is neutral, indicating that the themes are not emotionally charged or biased.
+*   The metadata provides information about the tweets, including the average length of the tweets, the language used, and whether the tweets contain hashtags and mentions.
+
+The sample tweets supporting each theme can be found in the original tweet dataset.",
+60,,"Error code: 429 - {'error': {'message': 'Request was rejected due to request rate limiting. Your rate limits are 60 RPM (1 QPS) and 60000 TPM (1000 TPS). See details: https://docs.together.ai/docs/rate-limits', 'type': 'credit_limit', 'param': None, 'code': None}}"
+60,"{
+  ""type"": ""object"",
+  ""properties"": {
+    ""themes"": {
+      ""type"": ""array"",
+      ""items"": {
+        ""type"": ""object"",
+        ""properties"": {
+          ""name"": {
+            ""type"": ""string"",
+            ""description"": ""Primary theme identified""
+          },
+          ""confidence"": {
+            ""type"": ""number"",
+            ""minimum"": 0,
+            ""maximum"": 100,
+            ""description"": ""Confidence level of theme extraction""
+          },
+          ""sub_themes"": {
+            ""type"": ""array"",
+            ""items"": {""type"": ""string""},
+            ""description"": ""Specific sub-categories within the theme""
+          },
+          ""keywords"": {
+            ""type"": ""array"",
+            ""items"": {""type"": ""string""},
+            ""description"": ""Key terms supporting the theme""
+          },
+          ""sentiment"": {
+            ""type"": ""string"",
+            ""enum"": [""positive"", ""negative"", ""neutral""],
+            ""description"": ""Emotional tone of the theme""
+          }
+        },
+        ""required"": [""name"", ""confidence""]
+      }
+    },
+    ""metadata"": {
+      ""type"": ""object"",
+      ""properties"": {
+        ""tweet_length"": {""type"": ""integer""},
+        ""language"": {""type"": ""string""},
+        ""contains_hashtags"": {""type"": ""boolean""},
+        ""contains_mentions"": {""type"": ""boolean""}
+      }
+    }
+  },
+  ""required"": [""themes""]
+} 
+
+{
+  ""themes"": [
+    {
+      ""name"": ""Politics and Current Events"",
+      ""confidence"": 85,
+      ""sub_themes"": [
+        ""US Politics"",
+        ""Gun Control"",
+        ""Natural Disasters""
+      ],
+      ""keywords"": [
+        ""Trump"",
+        ""NRA"",
+        ""Sandy"",
+        ""Hurricane""
+      ],
+      ""sentiment"": ""negative""
+    },
+    {
+      ""name"": ""Entertainment and Media"",
+      ""confidence"": 90,
+      ""sub_themes"": [
+        ""Movies"",
+        ""Music"",
+        ""TV Shows""
+      ],
+      ""keywords"": [
+        ""Netflix"",
+        ""Kardashian"",
+        ""Weezer"",
+        ""Panic! At The Disco""
+      ],
+      ""sentiment"": ""positive""
+    },
+    {
+      ""name"": ""Technology and Science"",
+      ""confidence"": 80,
+      ""sub_themes"": [
+        ""Artificial Intelligence"",
+        ""Machine Learning"",
+        ""Natural Language Processing""
+      ],
+      ""keywords"": [
+        ""AI"",
+        ""NLP"",
+        ""Machine Learning""
+      ],
+      ""sentiment"": ""neutral""
+    },
+    {
+      ""name"": ""Health and Wellness"",
+      ""confidence"": 75,
+      ""sub_themes"": [
+        ""Fitness"",
+        ""Nutrition"",
+        ""Mental Health""
+      ],
+      ""keywords"": [
+        ""Fitness"",
+        ""Nutrition"",
+        ""Mental Health""
+      ],
+      ""sentiment"": ""positive""
+    }
+  ],
+  ""metadata"": {
+    ""tweet_length"": 280,
+    ""language"": ""English"",
+    ""contains_hashtags"": true,
+    ""contains_mentions"": true
+  }
+}",
+60,"{
+    ""themes"": [
+        {
+            ""name"": ""Politics"",
+            ""confidence"": 85,
+            ""sub_themes"": [
+                ""Government spending"",
+                ""Election"",
+                ""Policy""
+            ],
+            ""keywords"": [
+                ""government"",
+                ""spending"",
+                ""election"",
+                ""policy"",
+                ""Trudeau""
+            ],
+            ""sentiment"": ""neutral""
+        },
+        {
+            ""name"": ""Technology"",
+            ""confidence"": 80,
+            ""sub_themes"": [
+                ""Blockchain"",
+                ""Linux"",
+                ""Steam"",
+                ""Windows""
+            ],
+            ""keywords"": [
+                ""blockchain"",
+                ""linux"",
+                ""steam"",
+                ""windows"",
+                ""games""
+            ],
+            ""sentiment"": ""neutral""
+        },
+        {
+            ""name"": ""Entertainment"",
+            ""confidence"": 90,
+            ""sub_themes"": [
+                ""Music"",
+                ""Movies"",
+                ""TV Shows""
+            ],
+            ""keywords"": [
+                ""music"",
+                ""movies"",
+                ""tv shows"",
+                ""kanye west"",
+                ""jay-z""
+            ],
+            ""sentiment"": ""positive""
+        },
+        {
+            ""name"": ""Sports"",
+            ""confidence"": 80,
+            ""sub_themes"": [
+                ""Racing"",
+                ""NASCAR"",
+                ""NHRA""
+            ],
+            ""keywords"": [
+                ""racing"",
+                ""nascar"",
+                ""nhra"",
+                ""trucks""
+            ],
+            ""sentiment"": ""positive""
+        },
+        {
+            ""name"": ""Health"",
+            ""confidence"": 75,
+            ""sub_themes"": [
+                ""Fitness"",
+                ""Wellness"",
+                ""Diet""
+            ],
+            ""keywords"": [
+                ""fitness"",
+                ""wellness"",
+                ""diet"",
+                ""ham""
+            ],
+            ""sentiment"": ""positive""
+        },
+        {
+            ""name"": ""Environment"",
+            ""confidence"": 70,
+            ""sub_themes"": [
+                ""Conservation"",
+                ""Sustainability"",
+                ""Eco-Friendly""
+            ],
+            ""keywords"": [
+                ""conservation"",
+                ""sustainability"",
+                ""eco-friendly"",
+                ""palliatives""
+            ],
+            ""sentiment"": ""neutral""
+        },
+        {
+            ""name"": ""Social Issues"",
+            ""confidence"": 85,
+            ""sub_themes"": [
+                ""Equality"",
+                ""Justice"",
+                ""Human Rights""
+            ],
+            ""keywords"": [
+                ""equality"",
+                ""justice"",
+                ""human rights"",
+                ""demons""
+            ],
+            ""sentiment"": ""positive""
+        }
+    ],
+    ""metadata"": {
+        ""tweet_length"": 200,
+        ""language"": ""en"",
+        ""contains_hashtags"": true,
+        ""contains_mentions"": true
+    }
+}",
+60,"```json
+{
+  ""type"": ""object"",
+  ""properties"": {
+    ""themes"": {
+      ""type"": ""array"",
+      ""items"": {
+        ""type"": ""object"",
+        ""properties"": {
+          ""name"": {
+            ""type"": ""string"",
+            ""description"": ""Primary theme identified""
+          },
+          ""confidence"": {
+            ""type"": ""number"",
+            ""minimum"": 0,
+            ""maximum"": 100,
+            ""description"": ""Confidence level of theme extraction""
+          },
+          ""sub_themes"": {
+            ""type"": ""array"",
+            ""items"": {""type"": ""string""},
+            ""description"": ""Specific sub-categories within the theme""
+          },
+          ""keywords"": {
+            ""type"": ""array"",
+            ""items"": {""type"": ""string""},
+            ""description"": ""Key terms supporting the theme""
+          },
+          ""sentiment"": {
+            ""type"": ""string"",
+            ""enum"": [""positive"", ""negative"", ""neutral""],
+            ""description"": ""Emotional tone of the theme""
+          }
+        },
+        ""required"": [""name"", ""confidence""]
+      }
+    },
+    ""metadata"": {
+      ""type"": ""object"",
+      ""properties"": {
+        ""tweet_length"": {
+          ""type"": ""integer""
+        },
+        ""language"": {
+          ""type"": ""string""
+        },
+        ""contains_hashtags"": {
+          ""type"": ""boolean""
+        },
+        ""contains_mentions"": {
+          ""type"": ""boolean""
+        }
+      }
+    }
+  },
+  ""required"": [""themes""]
+}
+```
+
+Here is the output based on the given analysis:
+
+```json
+{
+  ""themes"": [
+    {
+      ""name"": ""Politics"",
+      ""confidence"": 85,
+      ""sub_themes"": [
+        ""Voting"",
+        ""Elections"",
+        ""Government""
+      ],
+      ""keywords"": [
+        ""democracy"",
+        ""elections"",
+        ""government""
+      ],
+      ""sentiment"": ""neutral""
+    },
+    {
+      ""name"": ""Entertainment"",
+      ""confidence"": 80,
+      ""sub_themes"": [
+        ""Movies"",
+        ""Music"",
+        ""TV Shows""
+      ],
+      ""keywords"": [
+        ""movies"",
+        ""music"",
+        ""TV shows""
+      ],
+      ""sentiment"": ""positive""
+    },
+    {
+      ""name"": ""Food and Drink"",
+      ""confidence"": 75,
+      ""sub_themes"": [
+        ""Restaurants"",
+        ""Recipes"",
+        ""Cooking""
+      ],
+      ""keywords"": [
+        ""food"",
+        ""drink"",
+        ""recipes""
+      ],
+      ""sentiment"": ""neutral""
+    },
+    {
+      ""name"": ""Health and Wellness"",
+      ""confidence"": 70,
+      ""sub_themes"": [
+        ""Fitness"",
+        ""Nutrition"",
+        ""Mental Health""
+      ],
+      ""keywords"": [
+        ""fitness"",
+        ""nutrition"",
+        ""mental health""
+      ],
+      ""sentiment"": ""positive""
+    },
+    {
+      ""name"": ""Sports"",
+      ""confidence"": 65,
+      ""sub_themes"": [
+        ""Basketball"",
+        ""Football"",
+        ""Baseball""
+      ],
+      ""keywords"": [
+        ""sports"",
+        ""basketball"",
+        ""football""
+      ],
+      ""sentiment"": ""neutral""
+    },
+    {
+      ""name"": ""Technology"",
+      ""confidence"": 60,
+      ""sub_themes"": [
+        ""Software"",
+        ""Hardware"",
+        ""Programming""
+      ],
+      ""keywords"": [
+        ""technology"",
+        ""software"",
+        ""hardware""
+      ],
+      ""sentiment"": ""neutral""
+    },
+    {
+      ""name"": ""Business"",
+      ""confidence"": 55,
+      ""sub_themes"": [
+        ""Marketing"",
+        ""Finance"",
+        ""Management""
+      ],
+      ""keywords"": [
+        ""business"",
+        ""marketing"",
+        ""finance""
+      ],
+      ""sentiment"": ""positive""
+    },
+    {
+      ""name"": ""Social Media"",
+      ""confidence"": 50,
+      ""sub_themes"": [
+        ""Facebook"",
+        ""Twitter"",
+        ""Instagram""
+      ],
+      ""keywords"": [
+        ""social media"",
+        ""facebook"",
+        ""twitter""
+      ],
+      ""sentiment"": ""neutral""
+    },
+    {
+      ""name"": ""Education"",
+      ""confidence"": 45,
+      ""sub_themes"": [
+        ""Universities"",
+        ""Colleges"",
+        ""Online Courses""
+      ],
+      ""keywords"": [
+        ""education"",
+        ""universities"",
+        ""colleges""
+      ],
+      ""sentiment"": ""positive""
+    },
+    {
+      ""name"": ""Travel"",
+      ""confidence"": 40,
+      ""sub_themes"": [
+        ""Hotels"",
+        ""Restaurants"",
+        ""Tourism""
+      ],
+      ""keywords"": [
+        ""travel"",
+        ""hotels"",
+        ""restaurants""
+      ],
+      ""sentiment"": ""positive""
+    },
+    {
+      ""name"": ""Culture"",
+      ""confidence"": 35,
+      ""sub_themes"": [
+        ""Music"",
+        ""Art"",
+        ""Literature""
+      ],
+      ""keywords"": [
+        ""culture"",
+        ""music"",
+        ""art""
+      ],
+      ""sentiment"": ""positive""
+    }
+  ],
+  ""metadata"": {
+    ""tweet_length"": 280,
+    ""language"": ""English"",
+    ""contains_hashtags"": true,
+    ""contains_mentions"": true
+  }
+}
+```",
+60,"{
+  ""themes"": [
+    {
+      ""name"": ""Entertainment"",
+      ""confidence"": 85,
+      ""sub_themes"": [
+        ""Movies"",
+        ""Music"",
+        ""TV Shows""
+      ],
+      ""keywords"": [
+        ""20th Century Women"",
+        ""Call Me By Your Name"",
+        ""Ladybird"",
+        ""WineLovers_Unit"",
+        ""EarthDay2016"",
+        ""Perricone"",
+        ""Sicily"",
+        ""winelover""
+      ],
+      ""sentiment"": ""positive""
+    },
+    {
+      ""name"": ""Comedy"",
+      ""confidence"": 70,
+      ""sub_themes"": [
+        ""Humor"",
+        ""Jokes"",
+        ""Satire""
+      ],
+      ""keywords"": [
+        ""Krystal is okay"",
+        ""I\\'ve got FRIEEENDS!"",
+        ""life will find a way to shove your idiot face in to the mud where it belongs"",
+        ""\\xf0\\x9f\\x98\\x83 #winelover #wine #TheBigQuestion""
+      ],
+      ""sentiment"": ""positive""
+    },
+    {
+      ""name"": ""Sports"",
+      ""confidence"": 60,
+      ""sub_themes"": [
+        ""Football"",
+        ""Basketball""
+      ],
+      ""keywords"": [
+        ""williebosshog"",
+        ""DucksMusical"",
+        ""ducksdebut""
+      ],
+      ""sentiment"": ""positive""
+    },
+    {
+      ""name"": ""Technology"",
+      ""confidence"": 80,
+      ""sub_themes"": [
+        ""Gadgets"",
+        ""Software"",
+        ""Hardware""
+      ],
+      ""keywords"": [
+        ""Serial Port SDR"",
+        ""MozillaThunderbird"",
+        ""openSUSE"",
+        ""Security"",
+        ""Update""
+      ],
+      ""sentiment"": ""neutral""
+    },
+    {
+      ""name"": ""Politics"",
+      ""confidence"": 90,
+      ""sub_themes"": [
+        ""Government"",
+        ""Policy"",
+        ""Economy""
+      ],
+      ""keywords"": [
+        ""Corruption &amp; those protecting it being exposed"",
+        ""Panama Leaks"",
+        ""Netanyahu"",
+        ""Theresa May"",
+        ""Israeli media speculation""
+      ],
+      ""sentiment"": ""negative""
+    },
+    {
+      ""name"": ""Social Issues"",
+      ""confidence"": 75,
+      ""sub_themes"": [
+        ""Equality"",
+        ""Justice"",
+        ""Human Rights""
+      ],
+      ""keywords"": [
+        ""Freedom Ain't Free!"",
+        ""Thanks to all vets past, present and future for protecting us"",
+        ""Please, don\\xe2\\x80\\x99t just go up to someone and ask, \\xe2\\x80\\x9cWill you be my mentor?\\xe2\\x80\\x9d"",
+        ""#metaguide: 100 Best AWS WordPress Videos""
+      ],
+      ""sentiment"": ""positive""
+    },
+    {
+      ""name"": ""Personal Stories"",
+      ""confidence"": 65,
+      ""sub_themes"": [
+        ""Friendship"",
+        ""Family"",
+        ""Memories""
+      ],
+      ""keywords"": [
+        ""Child with Basket of Magical Lingzhi Fungus"",
+        ""spent the day cleanin out the garage and came across this blast from the past"",
+        ""Hippias Major , one retitled Worry You Off My Mind"",
+        ""Robin Starveling, a character in Richard Wagner's Der Ring des Nibelungen""
+      ],
+      ""sentiment"": ""positive""
+    }
+  ],
+  ""metadata"": {
+    ""tweet_length"": 500,
+    ""language"": ""English"",
+    ""contains_hashtags"": true,
+    ""contains_mentions"": true
+  }
+}",
+60,,"Error code: 429 - {'error': {'message': 'Request was rejected due to request rate limiting. Your rate limits are 60 RPM (1 QPS) and 60000 TPM (1000 TPS). See details: https://docs.together.ai/docs/rate-limits', 'type': 'credit_limit', 'param': None, 'code': None}}"
+60,"{
+  ""themes"": [
+    {
+      ""name"": ""News and Breaking News"",
+      ""confidence"": 80,
+      ""sub_themes"": [
+        ""Wildfires"",
+        ""Evacuations"",
+        ""Breaking News"",
+        ""News Stories""
+      ],
+      ""keywords"": [
+        ""BREAKING"",
+        ""wildfire"",
+        ""evacuation"",
+        ""news story""
+      ],
+      ""sentiment"": ""neutral""
+    },
+    {
+      ""name"": ""Technology and Hacking"",
+      ""confidence"": 70,
+      ""sub_themes"": [
+        ""Vulnerabilities"",
+        ""ExploitDB"",
+        ""Hacking"",
+        ""Technology News""
+      ],
+      ""keywords"": [
+        ""#ExploitDB"",
+        ""vulnerability"",
+        ""hacking"",
+        ""technology news""
+      ],
+      ""sentiment"": ""neutral""
+    },
+    {
+      ""name"": ""Politics and Elections"",
+      ""confidence"": 60,
+      ""sub_themes"": [
+        ""Election"",
+        ""Politics"",
+        ""Government"",
+        ""Leadership""
+      ],
+      ""keywords"": [
+        ""#SwachhBharat"",
+        ""election"",
+        ""politics"",
+        ""government""
+      ],
+      ""sentiment"": ""neutral""
+    },
+    {
+      ""name"": ""Entertainment and Culture"",
+      ""confidence"": 80,
+      ""sub_themes"": [
+        ""Movies"",
+        ""TV Shows"",
+        ""Music"",
+        ""Art""
+      ],
+      ""keywords"": [
+        ""movies"",
+        ""TV shows"",
+        ""music"",
+        ""art""
+      ],
+      ""sentiment"": ""positive""
+    },
+    {
+      ""name"": ""Environment and Sustainability"",
+      ""confidence"": 50,
+      ""sub_themes"": [
+        ""Climate Change"",
+        ""Sustainability"",
+        ""Environmental Protection"",
+        ""Eco-Friendly""
+      ],
+      ""keywords"": [
+        ""celeries"",
+        ""waterleaves"",
+        ""sustainability"",
+        ""environmental protection""
+      ],
+      ""sentiment"": ""neutral""
+    },
+    {
+      ""name"": ""Social Media and Memes"",
+      ""confidence"": 90,
+      ""sub_themes"": [
+        ""Memes"",
+        ""Social Media"",
+        ""Humor"",
+        ""Entertainment""
+      ],
+      ""keywords"": [
+        ""doo-dah"",
+        ""meme"",
+        ""social media"",
+        ""humor""
+      ],
+      ""sentiment"": ""positive""
+    },
+    {
+      ""name"": ""Business and Finance"",
+      ""confidence"": 80,
+      ""sub_themes"": [
+        ""Business"",
+        ""Finance"",
+        ""Economy"",
+        ""Investment""
+      ],
+      ""keywords"": [
+        ""finance"",
+        ""business"",
+        ""economy"",
+        ""investment""
+      ],
+      ""sentiment"": ""neutral""
+    },
+    {
+      ""name"": ""Travel and Adventure"",
+      ""confidence"": 50,
+      ""sub_themes"": [
+        ""Travel"",
+        ""Adventure"",
+        ""Exploration"",
+        ""Tourism""
+      ],
+      ""keywords"": [
+        ""Paris"",
+        ""travel"",
+        ""adventure"",
+        ""exploration""
+      ],
+      ""sentiment"": ""positive""
+    },
+    {
+      ""name"": ""Sports and Fitness"",
+      ""confidence"": 60,
+      ""sub_themes"": [
+        ""Sports"",
+        ""Fitness"",
+        ""Health"",
+        ""Wellness""
+      ],
+      ""keywords"": [
+        ""sports"",
+        ""fitness"",
+        ""health"",
+        ""wellness""
+      ],
+      ""sentiment"": ""positive""
+    }
+  ],
+  ""metadata"": {
+    ""tweet_length"": 50,
+    ""language"": ""en"",
+    ""contains_hashtags"": true,
+    ""contains_mentions"": true
+  }
+}",
+60,,"Error code: 429 - {'error': {'message': 'Request was rejected due to request rate limiting. Your rate limits are 60 RPM (1 QPS) and 60000 TPM (1000 TPS). See details: https://docs.together.ai/docs/rate-limits', 'type': 'credit_limit', 'param': None, 'code': None}}"
+60,,"Error code: 429 - {'error': {'message': 'Request was rejected due to request rate limiting. Your rate limits are 60 RPM (1 QPS) and 60000 TPM (1000 TPS). See details: https://docs.together.ai/docs/rate-limits', 'type': 'credit_limit', 'param': None, 'code': None}}"
+60,"{
+    ""type"": ""object"",
+    ""properties"": {
+        ""themes"": {
+            ""type"": ""array"",
+            ""items"": {
+                ""type"": ""object"",
+                ""properties"": {
+                    ""name"": {
+                        ""type"": ""string"",
+                        ""description"": ""Primary theme identified""
+                    },
+                    ""confidence"": {
+                        ""type"": ""number"", 
+                        ""minimum"": 0,
+                        ""maximum"": 100,
+                        ""description"": ""Confidence level of theme extraction""
+                    },
+                    ""sub_themes"": {
+                        ""type"": ""array"",
+                        ""items"": {""type"": ""string""},
+                        ""description"": ""Specific sub-categories within the theme""
+                    },
+                    ""keywords"": {
+                        ""type"": ""array"", 
+                        ""items"": {""type"": ""string""},
+                        ""description"": ""Key terms supporting the theme""
+                    },
+                    ""sentiment"": {
+                        ""type"": ""string"",
+                        ""enum"": [""positive"", ""negative"", ""neutral""],
+                        ""description"": ""Emotional tone of the theme""
+                    }
+                },
+                ""required"": [""name"", ""confidence""]
+            }
+        },
+        ""metadata"": {
+            ""type"": ""object"",
+            ""properties"": {
+                ""tweet_length"": {""type"": ""integer""},
+                ""language"": {""type"": ""string""},
+                ""contains_hashtags"": {""type"": ""boolean""},
+                ""contains_mentions"": {""type"": ""boolean""}
+            }
+        }
+    },
+    ""required"": [""themes""]
+} 
+
+{
+    ""themes"": [
+        {
+            ""name"": ""Humor and Entertainment"",
+            ""confidence"": 85,
+            ""sub_themes"": [""Sarcasm"", ""Jokes"", ""Memes""],
+            ""keywords"": [""LOL"", ""Jokes"", ""Memes""],
+            ""sentiment"": ""positive""
+        },
+        {
+            ""name"": ""Relationships and Social Interactions"",
+            ""confidence"": 70,
+            ""sub_themes"": [""Friendship"", ""Romance"", ""Conflict""],
+            ""keywords"": [""friend"", ""love"", ""conflict""],
+            ""sentiment"": ""neutral""
+        },
+        {
+            ""name"": ""Technology and Computing"",
+            ""confidence"": 60,
+            ""sub_themes"": [""Programming"", ""Software"", ""Gadgets""],
+            ""keywords"": [""tech"", ""programming"", ""gadget""],
+            ""sentiment"": ""neutral""
+        },
+        {
+            ""name"": ""Politics and Social Issues"",
+            ""confidence"": 55,
+            ""sub_themes"": [""Brexit"", ""Politics"", ""Social Justice""],
+            ""keywords"": [""politics"", ""social justice"", ""brexit""],
+            ""sentiment"": ""negative""
+        },
+        {
+            ""name"": ""Emotions and Personal Growth"",
+            ""confidence"": 50,
+            ""sub_themes"": [""Mental Health"", ""Self-Care"", ""Motivation""],
+            ""keywords"": [""mental health"", ""self-care"", ""motivation""],
+            ""sentiment"": ""positive""
+        },
+        {
+            ""name"": ""Miscellaneous"",
+            ""confidence"": 40,
+            ""sub_themes"": [""Food"", ""Travel"", ""Sports""],
+            ""keywords"": [""food"", ""travel"", ""sports""],
+            ""sentiment"": ""neutral""
+        }
+    ],
+    ""metadata"": {
+        ""tweet_length"": 234,
+        ""language"": ""en"",
+        ""contains_hashtags"": true,
+        ""contains_mentions"": true
+    }
+}",
+60,,"Error code: 429 - {'error': {'message': 'Request was rejected due to request rate limiting. Your rate limits are 60 RPM (1 QPS) and 60000 TPM (1000 TPS). See details: https://docs.together.ai/docs/rate-limits', 'type': 'credit_limit', 'param': None, 'code': None}}"
+60,"{
+  ""type"": ""object"",
+  ""properties"": {
+    ""themes"": {
+      ""type"": ""array"",
+      ""items"": {
+        ""type"": ""object"",
+        ""properties"": {
+          ""name"": {
+            ""type"": ""string"",
+            ""description"": ""Primary theme identified""
+          },
+          ""confidence"": {
+            ""type"": ""number"", 
+            ""minimum"": 0,
+            ""maximum"": 100,
+            ""description"": ""Confidence level of theme extraction""
+          },
+          ""sub_themes"": {
+            ""type"": ""array"",
+            ""items"": {""type"": ""string""},
+            ""description"": ""Specific sub-categories within the theme""
+          },
+          ""keywords"": {
+            ""type"": ""array"", 
+            ""items"": {""type"": ""string""},
+            ""description"": ""Key terms supporting the theme""
+          },
+          ""sentiment"": {
+            ""type"": ""string"",
+            ""enum"": [""positive"", ""negative"", ""neutral""],
+            ""description"": ""Emotional tone of the theme""
+          }
+        },
+        ""required"": [""name"", ""confidence""]
+      }
+    },
+    ""metadata"": {
+      ""type"": ""object"",
+      ""properties"": {
+        ""tweet_length"": {""type"": ""integer""},
+        ""language"": {""type"": ""string""},
+        ""contains_hashtags"": {""type"": ""boolean""},
+        ""contains_mentions"": {""type"": ""boolean""}
+      }
+    }
+  },
+  ""required"": [""themes""]
+}
+
+{
+  ""themes"": [
+    {
+      ""name"": ""Politics and World Events"",
+      ""confidence"": 85,
+      ""sub_themes"": [
+        ""Iraqi Politics"",
+        ""Middle East Conflict"",
+        ""US Politics"",
+        ""Global Events""
+      ],
+      ""keywords"": [
+        ""Iraq"",
+        ""US"",
+        ""Middle East"",
+        ""Politics"",
+        ""Government""
+      ],
+      ""sentiment"": ""neutral""
+    },
+    {
+      ""name"": ""Celebrity and Entertainment"",
+      ""confidence"": 90,
+      ""sub_themes"": [
+        ""Music"",
+        ""Movies"",
+        ""TV Shows"",
+        ""Celebrity News""
+      ],
+      ""keywords"": [
+        ""Music"",
+        ""Movies"",
+        ""TV"",
+        ""Celebrities""
+      ],
+      ""sentiment"": ""positive""
+    },
+    {
+      ""name"": ""Social Issues and Activism"",
+      ""confidence"": 80,
+      ""sub_themes"": [
+        ""Racial Issues"",
+        ""Social Justice"",
+        ""Activism"",
+        ""Human Rights""
+      ],
+      ""keywords"": [
+        ""Racism"",
+        ""Social Justice"",
+        ""Activism"",
+        ""Human Rights""
+      ],
+      ""sentiment"": ""negative""
+    },
+    {
+      ""name"": ""Technology and Science"",
+      ""confidence"": 75,
+      ""sub_themes"": [
+        ""Artificial Intelligence"",
+        ""Space Exploration"",
+        ""Science"",
+        ""Technology""
+      ],
+      ""keywords"": [
+        ""AI"",
+        ""Space"",
+        ""Science"",
+        ""Tech""
+      ],
+      ""sentiment"": ""neutral""
+    },
+    {
+      ""name"": ""Sports and Fitness"",
+      ""confidence"": 70,
+      ""sub_themes"": [
+        ""Sports News"",
+        ""Fitness"",
+        ""Athletes"",
+        ""Sports Teams""
+      ],
+      ""keywords"": [
+        ""Sports"",
+        ""Fitness"",
+        ""Athletes"",
+        ""Teams""
+      ],
+      ""sentiment"": ""positive""
+    },
+    {
+      ""name"": ""Business and Economics"",
+      ""confidence"": 65,
+      ""sub_themes"": [
+        ""Business News"",
+        ""Economy"",
+        ""Finance"",
+        ""Markets""
+      ],
+      ""keywords"": [
+        ""Business"",
+        ""Economy"",
+        ""Finance"",
+        ""Markets""
+      ],
+      ""sentiment"": ""neutral""
+    },
+    {
+      ""name"": ""Education and Learning"",
+      ""confidence"": 60,
+      ""sub_themes"": [
+        ""Education"",
+        ""Learning"",
+        ""Academia"",
+        ""Research""
+      ],
+      ""keywords"": [
+        ""Education"",
+        ""Learning"",
+        ""Academia"",
+        ""Research""
+      ],
+      ""sentiment"": ""neutral""
+    }
+  ],
+  ""metadata"": {
+    ""tweet_length"": 300,
+    ""language"": ""English"",
+    ""contains_hashtags"": true,
+    ""contains_mentions"": true
+  }
+}",
+60,,"Error code: 429 - {'error': {'message': 'Request was rejected due to request rate limiting. Your rate limits are 60 RPM (1 QPS) and 60000 TPM (1000 TPS). See details: https://docs.together.ai/docs/rate-limits', 'type': 'credit_limit', 'param': None, 'code': None}}"
+60,"```json
+{
+    ""themes"": [
+        {
+            ""name"": ""Politics and Social Issues"",
+            ""confidence"": 80,
+            ""sub_themes"": [
+                ""Politics"",
+                ""Social Issues"",
+                ""Human Rights""
+            ],
+            ""keywords"": [
+                ""Punjab Police"",
+                ""Manchester attack"",
+                ""Canadian citizen"",
+                ""Hate speech"",
+                ""ISIS""
+            ],
+            ""sentiment"": ""negative""
+        },
+        {
+            ""name"": ""Entertainment and Celebrities"",
+            ""confidence"": 70,
+            ""sub_themes"": [
+                ""Celebrity News"",
+                ""Movies"",
+                ""Music""
+            ],
+            ""keywords"": [
+                ""Kardashian"",
+                ""Kim"",
+                ""Khloe"",
+                ""Kylie"",
+                ""Justin Bieber""
+            ],
+            ""sentiment"": ""positive""
+        },
+        {
+            ""name"": ""Technology and Science"",
+            ""confidence"": 80,
+            ""sub_themes"": [
+                ""AI"",
+                ""NLP"",
+                ""Machine Learning""
+            ],
+            ""keywords"": [
+                ""AI"",
+                ""NLP"",
+                ""Machine Learning"",
+                ""Python"",
+                ""Data Science""
+            ],
+            ""sentiment"": ""neutral""
+        },
+        {
+            ""name"": ""Health and Wellness"",
+            ""confidence"": 60,
+            ""sub_themes"": [
+                ""Fitness"",
+                ""Nutrition"",
+                ""Mental Health""
+            ],
+            ""keywords"": [
+                ""Exercise"",
+                ""Diet"",
+                ""Mental Health"",
+                ""Wellness"",
+                ""Self-care""
+            ],
+            ""sentiment"": ""positive""
+        },
+        {
+            ""name"": ""Travel and Leisure"",
+            ""confidence"": 50,
+            ""sub_themes"": [
+                ""Travel"",
+                ""Tourism"",
+                ""Leisure""
+            ],
+            ""keywords"": [
+                ""Travel"",
+                ""Vacation"",
+                ""Holiday"",
+                ""Tourism"",
+                ""Adventure""
+            ],
+            ""sentiment"": ""positive""
+        },
+        {
+            ""name"": ""Education and Personal Development"",
+            ""confidence"": 40,
+            ""sub_themes"": [
+                ""Education"",
+                ""Learning"",
+                ""Personal Development""
+            ],
+            ""keywords"": [
+                ""Education"",
+                ""Learning"",
+                ""Personal Growth"",
+                ""Self-improvement"",
+                ""Motivation""
+            ],
+            ""sentiment"": ""positive""
+        },
+        {
+            ""name"": ""Sports and Fitness"",
+            ""confidence"": 30,
+            ""sub_themes"": [
+                ""Sports"",
+                ""Fitness"",
+                ""Exercise""
+            ],
+            ""keywords"": [
+                ""Sports"",
+                ""Fitness"",
+                ""Exercise"",
+                ""Running"",
+                ""Weightlifting""
+            ],
+            ""sentiment"": ""positive""
+        },
+        {
+            ""name"": ""Food and Recipes"",
+            ""confidence"": 20,
+            ""sub_themes"": [
+                ""Food"",
+                ""Recipes"",
+                ""Cooking""
+            ],
+            ""keywords"": [
+                ""Food"",
+                ""Recipes"",
+                ""Cooking"",
+                ""Diet"",
+                ""Nutrition""
+            ],
+            ""sentiment"": ""positive""
+        },
+        {
+            ""name"": ""Business and Finance"",
+            ""confidence"": 10,
+            ""sub_themes"": [
+                ""Business"",
+                ""Finance"",
+                ""Economy""
+            ],
+            ""keywords"": [
+                ""Business"",
+                ""Finance"",
+                ""Economy"",
+                ""Investment"",
+                ""Market""
+            ],
+            ""sentiment"": ""neutral""
+        }
+    ],
+    ""metadata"": {
+        ""tweet_length"": 150,
+        ""language"": ""English"",
+        ""contains_hashtags"": true,
+        ""contains_mentions"": true
+    }
+}
+```",
+60,"{
+  ""themes"": [
+    {
+      ""name"": ""Pop Culture"",
+      ""confidence"": 85,
+      ""sub_themes"": [
+        ""Music"",
+        ""Movies"",
+        ""TV Shows"",
+        ""Celebrities""
+      ],
+      ""keywords"": [
+        ""music"",
+        ""movies"",
+        ""TV"",
+        ""celebrities"",
+        ""awards"",
+        ""entertainment""
+      ],
+      ""sentiment"": ""positive""
+    },
+    {
+      ""name"": ""Technology"",
+      ""confidence"": 80,
+      ""sub_themes"": [
+        ""Gadgets"",
+        ""Software"",
+        ""Hacking"",
+        ""Cybersecurity""
+      ],
+      ""keywords"": [
+        ""tech"",
+        ""gadgets"",
+        ""hacking"",
+        ""cybersecurity"",
+        ""software""
+      ],
+      ""sentiment"": ""neutral""
+    },
+    {
+      ""name"": ""Travel"",
+      ""confidence"": 75,
+      ""sub_themes"": [
+        ""Road Trips"",
+        ""Tourism"",
+        ""Adventure""
+      ],
+      ""keywords"": [
+        ""travel"",
+        ""road trip"",
+        ""tourism"",
+        ""adventure""
+      ],
+      ""sentiment"": ""positive""
+    },
+    {
+      ""name"": ""Sports"",
+      ""confidence"": 70,
+      ""sub_themes"": [
+        ""Football"",
+        ""Basketball"",
+        ""Baseball""
+      ],
+      ""keywords"": [
+        ""sports"",
+        ""football"",
+        ""basketball"",
+        ""baseball""
+      ],
+      ""sentiment"": ""positive""
+    },
+    {
+      ""name"": ""Politics"",
+      ""confidence"": 65,
+      ""sub_themes"": [
+        ""Government"",
+        ""Elections"",
+        ""Social Issues""
+      ],
+      ""keywords"": [
+        ""politics"",
+        ""government"",
+        ""elections"",
+        ""social issues""
+      ],
+      ""sentiment"": ""negative""
+    },
+    {
+      ""name"": ""Education"",
+      ""confidence"": 60,
+      ""sub_themes"": [
+        ""Schools"",
+        ""Universities"",
+        ""Online Courses""
+      ],
+      ""keywords"": [
+        ""education"",
+        ""schools"",
+        ""universities"",
+        ""online courses""
+      ],
+      ""sentiment"": ""neutral""
+    },
+    {
+      ""name"": ""Food"",
+      ""confidence"": 55,
+      ""sub_themes"": [
+        ""Restaurants"",
+        ""Cooking"",
+        ""Recipes""
+      ],
+      ""keywords"": [
+        ""food"",
+        ""restaurants"",
+        ""cooking"",
+        ""recipes""
+      ],
+      ""sentiment"": ""positive""
+    },
+    {
+      ""name"": ""Environment"",
+      ""confidence"": 50,
+      ""sub_themes"": [
+        ""Climate Change"",
+        ""Conservation"",
+        ""Sustainability""
+      ],
+      ""keywords"": [
+        ""environment"",
+        ""climate change"",
+        ""conservation"",
+        ""sustainability""
+      ],
+      ""sentiment"": ""concerned""
+    },
+    {
+      ""name"": ""Social Issues"",
+      ""confidence"": 45,
+      ""sub_themes"": [
+        ""Racism"",
+        ""Sexism"",
+        ""Homophobia""
+      ],
+      ""keywords"": [
+        ""social issues"",
+        ""racism"",
+        ""sexism"",
+        ""homophobia""
+      ],
+      ""sentiment"": ""concerned""
+    }
+  ],
+  ""metadata"": {
+    ""tweet_length"": 140,
+    ""language"": ""English"",
+    ""contains_hashtags"": true,
+    ""contains_mentions"": true
+  }
+}",
+60,,"Error code: 429 - {'error': {'message': 'Request was rejected due to request rate limiting. Your rate limits are 60 RPM (1 QPS) and 60000 TPM (1000 TPS). See details: https://docs.together.ai/docs/rate-limits', 'type': 'credit_limit', 'param': None, 'code': None}}"
+60,"{
+    ""themes"": [
+        {
+            ""name"": ""Entertainment"",
+            ""confidence"": 85,
+            ""sub_themes"": [
+                ""Movies"",
+                ""TV Shows"",
+                ""Music"",
+                ""Celebrities""
+            ],
+            ""keywords"": [
+                ""BB12"",
+                ""Bigg Boss"",
+                ""GuysBigProject"",
+                ""GuysBigProject"",
+                ""FrozenVanity"",
+                ""CelebJuice"",
+                ""Hugh Grant"",
+                ""Leveson"",
+                ""Hugh Grant""
+            ],
+            ""sentiment"": ""neutral""
+        },
+        {
+            ""name"": ""Technology"",
+            ""confidence"": 80,
+            ""sub_themes"": [
+                ""AI"",
+                ""Robots"",
+                ""Self-Healing"",
+                ""Blockchain"",
+                ""Crypto""
+            ],
+            ""keywords"": [
+                ""AI TAKEOVER"",
+                ""SELF-HEALING"",
+                ""SpankChain"",
+                ""Crypto"",
+                ""Blockchain"",
+                ""Robots""
+            ],
+            ""sentiment"": ""neutral""
+        },
+        {
+            ""name"": ""Sports"",
+            ""confidence"": 70,
+            ""sub_themes"": [
+                ""Basketball"",
+                ""March Madness"",
+                ""NCAATournament""
+            ],
+            ""keywords"": [
+                ""March Madness"",
+                ""NCAATournament"",
+                ""CBS""
+            ],
+            ""sentiment"": ""excitement""
+        },
+        {
+            ""name"": ""Food"",
+            ""confidence"": 65,
+            ""sub_themes"": [
+                ""Cuisine"",
+                ""Recipes"",
+                ""Foodie""
+            ],
+            ""keywords"": [
+                ""Food"",
+                ""Cuisine"",
+                ""Recipes"",
+                ""Cake""
+            ],
+            ""sentiment"": ""positive""
+        },
+        {
+            ""name"": ""News"",
+            ""confidence"": 60,
+            ""sub_themes"": [
+                ""Politics"",
+                ""World News"",
+                ""Current Events""
+            ],
+            ""keywords"": [
+                ""Russia"",
+                ""Canada"",
+                ""Diplomats"",
+                ""Security"",
+                ""Expulsion"",
+                ""North Korea""
+            ],
+            ""sentiment"": ""serious""
+        },
+        {
+            ""name"": ""Personal"",
+            ""confidence"": 55,
+            ""sub_themes"": [
+                ""Health"",
+                ""Wellness"",
+                ""Self-Care""
+            ],
+            ""keywords"": [
+                ""Health"",
+                ""Wellness"",
+                ""Self-Care"",
+                ""Acne"",
+                ""Scarring""
+            ],
+            ""sentiment"": ""concerned""
+        },
+        {
+            ""name"": ""Travel"",
+            ""confidence"": 50,
+            ""sub_themes"": [
+                ""Adventure"",
+                ""Exploration"",
+                ""Travel Tips""
+            ],
+            ""keywords"": [
+                ""Travel"",
+                ""Adventure"",
+                ""Exploration"",
+                ""Portland"",
+                ""Sheriff""
+            ],
+            ""sentiment"": ""excitement""
+        }
+    ],
+    ""metadata"": {
+        ""tweet_length"": 50,
+        ""language"": ""en"",
+        ""contains_hashtags"": true,
+        ""contains_mentions"": true
+    }
+}",
+60,"{
+  ""themes"": [
+    {
+      ""name"": ""Politics and Governance"",
+      ""confidence"": 85,
+      ""sub_themes"": [""Pakistan politics"", ""Government policies"", ""Social justice""],
+      ""keywords"": [""PTI"", ""Timber mafia"", ""Green policy"", ""KP""],
+      ""sentiment"": ""neutral""
+    },
+    {
+      ""name"": ""Technology and Innovation"",
+      ""confidence"": 80,
+      ""sub_themes"": [""Artificial intelligence"", ""Robotics"", ""Cybersecurity""],
+      ""keywords"": [""IBM Watson"", ""Robot deception"", ""IEEE ISTAS 2017""],
+      ""sentiment"": ""neutral""
+    },
+    {
+      ""name"": ""Environment and Conservation"",
+      ""confidence"": 75,
+      ""sub_themes"": [""Climate change"", ""Sustainability"", ""Wildlife conservation""],
+      ""keywords"": [""Green policy"", ""Timber mafia"", ""Bermuda's L F R Leavis""],
+      ""sentiment"": ""positive""
+    },
+    {
+      ""name"": ""Sports and Entertainment"",
+      ""confidence"": 70,
+      ""sub_themes"": [""Football"", ""Eagles"", ""Philly""],
+      ""keywords"": [""Nick Foles"", ""Philadelphia Eagles"", ""Cary News story""],
+      ""sentiment"": ""positive""
+    },
+    {
+      ""name"": ""Social Issues and Mental Health"",
+      ""confidence"": 65,
+      ""sub_themes"": [""Mental health"", ""OCD"", ""Self-care""],
+      ""keywords"": [""Depression"", ""Self-love"", ""Happiness tips""],
+      ""sentiment"": ""neutral""
+    },
+    {
+      ""name"": ""Art and Culture"",
+      ""confidence"": 60,
+      ""sub_themes"": [""Poetry"", ""Literature"", ""Horticulture""],
+      ""keywords"": [""Jen Benka"", ""Poetry section"", ""Bermuda's L F R Leavis""],
+      ""sentiment"": ""positive""
+    },
+    {
+      ""name"": ""Science and Education"",
+      ""confidence"": 55,
+      ""sub_themes"": [""Physics"", ""Chemistry"", ""Biology""],
+      ""keywords"": [""MIT"", ""Enthalpy entropy chart"", ""Century in 2007""],
+      ""sentiment"": ""neutral""
+    }
+  ],
+  ""metadata"": {
+    ""tweet_length"": 100,
+    ""language"": ""en"",
+    ""contains_hashtags"": true,
+    ""contains_mentions"": true
+  }
+}",
+60,"{
+  ""type"": ""object"",
+  ""properties"": {
+    ""themes"": {
+      ""type"": ""array"",
+      ""items"": {
+        ""type"": ""object"",
+        ""properties"": {
+          ""name"": {
+            ""type"": ""string"",
+            ""description"": ""Primary theme identified""
+          },
+          ""confidence"": {
+            ""type"": ""number"",
+            ""minimum"": 0,
+            ""maximum"": 100,
+            ""description"": ""Confidence level of theme extraction""
+          },
+          ""sub_themes"": {
+            ""type"": ""array"",
+            ""items"": {
+              ""type"": ""string""
+            },
+            ""description"": ""Specific sub-categories within the theme""
+          },
+          ""keywords"": {
+            ""type"": ""array"",
+            ""items"": {
+              ""type"": ""string""
+            },
+            ""description"": ""Key terms supporting the theme""
+          },
+          ""sentiment"": {
+            ""type"": ""string"",
+            ""enum"": [
+              ""positive"",
+              ""negative"",
+              ""neutral""
+            ],
+            ""description"": ""Emotional tone of the theme""
+          }
+        },
+        ""required"": [
+          ""name"",
+          ""confidence""
+        ]
+      }
+    },
+    ""metadata"": {
+      ""type"": ""object"",
+      ""properties"": {
+        ""tweet_length"": {
+          ""type"": ""integer""
+        },
+        ""language"": {
+          ""type"": ""string""
+        },
+        ""contains_hashtags"": {
+          ""type"": ""boolean""
+        },
+        ""contains_mentions"": {
+          ""type"": ""boolean""
+        }
+      }
+    }
+  },
+  ""required"": [
+    ""themes""
+  ]
+}
+
+{
+  ""themes"": [
+    {
+      ""name"": ""Pop Culture"",
+      ""confidence"": 85,
+      ""sub_themes"": [
+        ""Movies"",
+        ""Music"",
+        ""TV Shows"",
+        ""Celebrity""
+      ],
+      ""keywords"": [
+        ""Planet of the Apes"",
+        ""Licorice Allsorts"",
+        ""Andy Bot"",
+        ""TeesoPrettyLike""
+      ],
+      ""sentiment"": ""positive""
+    },
+    {
+      ""name"": ""Technology"",
+      ""confidence"": 80,
+      ""sub_themes"": [
+        ""Artificial Intelligence"",
+        ""Blockchain"",
+        ""Deep Learning"",
+        ""Natural Language Processing""
+      ],
+      ""keywords"": [
+        ""DNLP"",
+        ""Blockchain Fund"",
+        ""Bitcoin"",
+        ""Machine Learning""
+      ],
+      ""sentiment"": ""neutral""
+    },
+    {
+      ""name"": ""Personal Finance"",
+      ""confidence"": 70,
+      ""sub_themes"": [
+        ""Investment"",
+        ""Wealth Management"",
+        ""Economy""
+      ],
+      ""keywords"": [
+        ""Wall Street"",
+        ""BTC"",
+        ""Blockchain Fund"",
+        ""Investment Analysis""
+      ],
+      ""sentiment"": ""negative""
+    },
+    {
+      ""name"": ""Social Issues"",
+      ""confidence"": 90,
+      ""sub_themes"": [
+        ""Gender Equality"",
+        ""Social Integration"",
+        ""Breast Cancer Awareness"",
+        ""Poverty""
+      ],
+      ""keywords"": [
+        ""Promoting social integration"",
+        ""Everyone benefits"",
+        ""Breast cancer awareness"",
+        ""Think Pink""
+      ],
+      ""sentiment"": ""positive""
+    },
+    {
+      ""name"": ""Environment"",
+      ""confidence"": 60,
+      ""sub_themes"": [
+        ""Climate Change"",
+        ""Sustainability"",
+        ""Conservation""
+      ],
+      ""keywords"": [
+        ""Uldomeare"",
+        ""Interplanetary data glitch tapestry"",
+        ""Planet discovery""
+      ],
+      ""sentiment"": ""neutral""
+    },
+    {
+      ""name"": ""Relationships"",
+      ""confidence"": 80,
+      ""sub_themes"": [
+        ""Friendship"",
+        ""Love"",
+        ""Family""
+      ],
+      ""keywords"": [
+        ""Thank God It's Pizza Friday"",
+        ""Green carpet"",
+        ""Girlfriend"",
+        ""Cheeky JD""
+      ],
+      ""sentiment"": ""positive""
+    },
+    {
+      ""name"": ""Health"",
+      ""confidence"": 70,
+      ""sub_themes"": [
+        ""Mental Health"",
+        ""Physical Health"",
+        ""Wellness""
+      ],
+      ""keywords"": [
+        ""Hypochondria"",
+        ""Babies"",
+        ""Dumb"",
+        ""Breathing""
+      ],
+      ""sentiment"": ""negative""
+    },
+    {
+      ""name"": ""Travel"",
+      ""confidence"": 60,
+      ""sub_themes"": [
+        ""Adventure"",
+        ""Vacation"",
+        ""Tourism""
+      ],
+      ""keywords"": [
+        ""Lee Vining"",
+        ""Best gas station cheeseburgers"",
+        ""Manhattan beach"",
+        ""North end cafe""
+      ],
+      ""sentiment"": ""positive""
+    },
+    {
+      ""name"": ""Education"",
+      ""confidence"": 80,
+      ""sub_themes"": [
+        ""Learning"",
+        ""Teaching"",
+        ""Academia""
+      ],
+      ""keywords"": [
+        ""Saivite"",
+        ""Unical codices"",
+        ""Maraimalai Adigal"",
+        ""Seamus Heaney""
+      ],
+      ""sentiment"": ""neutral""
+    },
+    {
+      ""name"": ""Politics"",
+      ""confidence"": 90,
+      ""sub_themes"": [
+        ""Government"",
+        ""Elections"",
+        ""Policy""
+      ],
+      ""keywords"": [
+        ""Occupied Kashmir"",
+        ""Mehbooba Mufti"",
+        ""Indian flag"",
+        ""Breast cancer awareness""
+      ],
+      ""sentiment"": ""negative""
+    }
+  ],
+  ""metadata"": {
+    ""tweet_length"": 140,
+    ""language"": ""English"",
+    ""contains_hashtags"": true,
+    ""contains_mentions"": true
+  }
+}",
+60,"{
+    ""type"": ""object"",
+    ""properties"": {
+        ""themes"": {
+            ""type"": ""array"",
+            ""items"": {
+                ""type"": ""object"",
+                ""properties"": {
+                    ""name"": {
+                        ""type"": ""string"",
+                        ""description"": ""Primary theme identified""
+                    },
+                    ""confidence"": {
+                        ""type"": ""number"", 
+                        ""minimum"": 0,
+                        ""maximum"": 100,
+                        ""description"": ""Confidence level of theme extraction""
+                    },
+                    ""sub_themes"": {
+                        ""type"": ""array"",
+                        ""items"": {""type"": ""string""},
+                        ""description"": ""Specific sub-categories within the theme""
+                    },
+                    ""keywords"": {
+                        ""type"": ""array"", 
+                        ""items"": {""type"": ""string""},
+                        ""description"": ""Key terms supporting the theme""
+                    },
+                    ""sentiment"": {
+                        ""type"": ""string"",
+                        ""enum"": [""positive"", ""negative"", ""neutral""],
+                        ""description"": ""Emotional tone of the theme""
+                    }
+                },
+                ""required"": [""name"", ""confidence""]
+            }
+        },
+        ""metadata"": {
+            ""type"": ""object"",
+            ""properties"": {
+                ""tweet_length"": {""type"": ""integer""},
+                ""language"": {""type"": ""string""},
+                ""contains_hashtags"": {""type"": ""boolean""},
+                ""contains_mentions"": {""type"": ""boolean""}
+            }
+        }
+    },
+    ""required"": [""themes""]
+}
+
+{
+    ""themes"": [
+        {
+            ""name"": ""Gaming"",
+            ""confidence"": 70,
+            ""sub_themes"": [""Indy 500"", ""Gaming Community"", ""Summerfest""],
+            ""keywords"": [""Indy 500"", ""Gaming"", ""Summerfest""],
+            ""sentiment"": ""neutral""
+        },
+        {
+            ""name"": ""Politics"",
+            ""confidence"": 80,
+            ""sub_themes"": [""Trump"", ""Muslims"", ""Climate Change""],
+            ""keywords"": [""Trump"", ""Muslims"", ""Climate Change""],
+            ""sentiment"": ""negative""
+        },
+        {
+            ""name"": ""Music"",
+            ""confidence"": 60,
+            ""sub_themes"": [""KCRW"", ""Wine Tasting"", ""Liquorice Allsorts""],
+            ""keywords"": [""Music"", ""KCRW"", ""Wine Tasting""],
+            ""sentiment"": ""positive""
+        },
+        {
+            ""name"": ""Social Media"",
+            ""confidence"": 50,
+            ""sub_themes"": [""Twitter"", ""Instagram"", ""Facebook""],
+            ""keywords"": [""Twitter"", ""Instagram"", ""Facebook""],
+            ""sentiment"": ""neutral""
+        },
+        {
+            ""name"": ""Economy"",
+            ""confidence"": 80,
+            ""sub_themes"": [""Budget"", ""Business"", ""Entrepreneurship""],
+            ""keywords"": [""Budget"", ""Business"", ""Entrepreneurship""],
+            ""sentiment"": ""positive""
+        },
+        {
+            ""name"": ""Health"",
+            ""confidence"": 60,
+            ""sub_themes"": [""Mental Health"", ""Fitness"", ""Wellness""],
+            ""keywords"": [""Health"", ""Mental Health"", ""Fitness""],
+            ""sentiment"": ""positive""
+        }
+    ],
+    ""metadata"": {
+        ""tweet_length"": 140,
+        ""language"": ""en"",
+        ""contains_hashtags"": true,
+        ""contains_mentions"": true
+    }
+}",
+60,,"Error code: 429 - {'error': {'message': 'Request was rejected due to request rate limiting. Your rate limits are 60 RPM (1 QPS) and 60000 TPM (1000 TPS). See details: https://docs.together.ai/docs/rate-limits', 'type': 'credit_limit', 'param': None, 'code': None}}"
+60,,"Error code: 429 - {'error': {'message': 'Request was rejected due to request rate limiting. Your rate limits are 60 RPM (1 QPS) and 60000 TPM (1000 TPS). See details: https://docs.together.ai/docs/rate-limits', 'type': 'credit_limit', 'param': None, 'code': None}}"
+60,"{
+    ""type"": ""object"",
+    ""properties"": {
+        ""themes"": {
+            ""type"": ""array"",
+            ""items"": {
+                ""type"": ""object"",
+                ""properties"": {
+                    ""name"": {
+                        ""type"": ""string"",
+                        ""description"": ""Primary theme identified""
+                    },
+                    ""confidence"": {
+                        ""type"": ""number"", 
+                        ""minimum"": 0,
+                        ""maximum"": 100,
+                        ""description"": ""Confidence level of theme extraction""
+                    },
+                    ""sub_themes"": {
+                        ""type"": ""array"",
+                        ""items"": {""type"": ""string""},
+                        ""description"": ""Specific sub-categories within the theme""
+                    },
+                    ""keywords"": {
+                        ""type"": ""array"", 
+                        ""items"": {""type"": ""string""},
+                        ""description"": ""Key terms supporting the theme""
+                    },
+                    ""sentiment"": {
+                        ""type"": ""string"",
+                        ""enum"": [""positive"", ""negative"", ""neutral""],
+                        ""description"": ""Emotional tone of the theme""
+                    }
+                },
+                ""required"": [""name"", ""confidence""]
+            }
+        },
+        ""metadata"": {
+            ""type"": ""object"",
+            ""properties"": {
+                ""tweet_length"": {""type"": ""integer""},
+                ""language"": {""type"": ""string""},
+                ""contains_hashtags"": {""type"": ""boolean""},
+                ""contains_mentions"": {""type"": ""boolean""}
+            }
+        }
+    },
+    ""required"": [""themes""]
+}
+
+{
+    ""themes"": [
+        {
+            ""name"": ""Social Issues"",
+            ""confidence"": 85,
+            ""sub_themes"": [
+                ""Gun Control"",
+                ""Immigration"",
+                ""Women's Rights""
+            ],
+            ""keywords"": [
+                ""NRA"",
+                ""Gun Sense"",
+                ""Women's Empowerment""
+            ],
+            ""sentiment"": ""negative""
+        },
+        {
+            ""name"": ""Technology"",
+            ""confidence"": 90,
+            ""sub_themes"": [
+                ""Artificial Intelligence"",
+                ""Robotics"",
+                ""Cybersecurity""
+            ],
+            ""keywords"": [
+                ""AI"",
+                ""Robotics"",
+                ""Cybersecurity""
+            ],
+            ""sentiment"": ""neutral""
+        },
+        {
+            ""name"": ""Personal Development"",
+            ""confidence"": 80,
+            ""sub_themes"": [
+                ""Self-Improvement"",
+                ""Motivation"",
+                ""Inspiration""
+            ],
+            ""keywords"": [
+                ""Motivation"",
+                ""Inspiration"",
+                ""Personal Growth""
+            ],
+            ""sentiment"": ""positive""
+        },
+        {
+            ""name"": ""Entertainment"",
+            ""confidence"": 75,
+            ""sub_themes"": [
+                ""Movies"",
+                ""Music"",
+                ""TV Shows""
+            ],
+            ""keywords"": [
+                ""Movies"",
+                ""Music"",
+                ""TV Shows""
+            ],
+            ""sentiment"": ""neutral""
+        },
+        {
+            ""name"": ""Politics"",
+            ""confidence"": 95,
+            ""sub_themes"": [
+                ""Elections"",
+                ""Policy"",
+                ""Government""
+            ],
+            ""keywords"": [
+                ""Elections"",
+                ""Policy"",
+                ""Government""
+            ],
+            ""sentiment"": ""negative""
+        },
+        {
+            ""name"": ""Science and Environment"",
+            ""confidence"": 85,
+            ""sub_themes"": [
+                ""Climate Change"",
+                ""Conservation"",
+                ""Science""
+            ],
+            ""keywords"": [
+                ""Climate Change"",
+                ""Conservation"",
+                ""Science""
+            ],
+            ""sentiment"": ""negative""
+        },
+        {
+            ""name"": ""Sports"",
+            ""confidence"": 70,
+            ""sub_themes"": [
+                ""Football"",
+                ""Basketball"",
+                ""Baseball""
+            ],
+            ""keywords"": [
+                ""Football"",
+                ""Basketball"",
+                ""Baseball""
+            ],
+            ""sentiment"": ""neutral""
+        },
+        {
+            ""name"": ""Education"",
+            ""confidence"": 80,
+            ""sub_themes"": [
+                ""Learning"",
+                ""Teaching"",
+                ""Education Policy""
+            ],
+            ""keywords"": [
+                ""Learning"",
+                ""Teaching"",
+                ""Education Policy""
+            ],
+            ""sentiment"": ""positive""
+        }
+    ],
+    ""metadata"": {
+        ""tweet_length"": 280,
+        ""language"": ""English"",
+        ""contains_hashtags"": true,
+        ""contains_mentions"": true
+    }
+}",
+60,"{
+  ""themes"": [
+    {
+      ""name"": ""Politics and Elections"",
+      ""confidence"": 80,
+      ""sub_themes"": [
+        ""Government"",
+        ""Elections"",
+        ""Politicians""
+      ],
+      ""keywords"": [
+        ""EPA"",
+        ""Pope"",
+        ""Cardinal Mahony"",
+        ""LA"",
+        ""conclave"",
+        ""gun rights""
+      ],
+      ""sentiment"": ""neutral""
+    },
+    {
+      ""name"": ""Social Media and Culture"",
+      ""confidence"": 70,
+      ""sub_themes"": [
+        ""Social Media"",
+        ""Culture"",
+        ""Trending Topics""
+      ],
+      ""keywords"": [
+        ""Twitter"",
+        ""Facebook"",
+        ""Instagram"",
+        "" Snapchat""
+      ],
+      ""sentiment"": ""positive""
+    },
+    {
+      ""name"": ""Technology and Science"",
+      ""confidence"": 85,
+      ""sub_themes"": [
+        ""Tech"",
+        ""Science"",
+        ""Innovation""
+      ],
+      ""keywords"": [
+        ""Malware"",
+        ""Industrial Systems"",
+        ""McAfeeLabs"",
+        ""Memristor"",
+        ""Yahoo! Pipes""
+      ],
+      ""sentiment"": ""neutral""
+    },
+    {
+      ""name"": ""Sports and Entertainment"",
+      ""confidence"": 60,
+      ""sub_themes"": [
+        ""Sports"",
+        ""Entertainment"",
+        ""Music""
+      ],
+      ""keywords"": [
+        ""Basketball"",
+        ""Football"",
+        ""Music"",
+        ""Movies""
+      ],
+      ""sentiment"": ""positive""
+    },
+    {
+      ""name"": ""Personal and Humor"",
+      ""confidence"": 65,
+      ""sub_themes"": [
+        ""Personal"",
+        ""Humor"",
+        ""Jokes""
+      ],
+      ""keywords"": [
+        ""Doo-dah"",
+        ""doo-dah"",
+        ""Jokes"",
+        ""Puns""
+      ],
+      ""sentiment"": ""positive""
+    }
+  ],
+  ""metadata"": {
+    ""tweet_length"": 50,
+    ""language"": ""English"",
+    ""contains_hashtags"": true,
+    ""contains_mentions"": true
+  }
+}",
+60,"{
+    ""themes"": [
+        {
+            ""name"": ""Politics and Government"",
+            ""confidence"": 85.0,
+            ""sub_themes"": [""Government Intervention"", ""International Relations"", ""Elections"", ""Politics in Sports""],
+            ""keywords"": [""Trump"", ""Afghanistan"", ""U.S."", ""Robot contest"", ""Pak"", ""PSL final"", ""Lahore""],
+            ""sentiment"": ""neutral""
+        },
+        {
+            ""name"": ""Social Issues"",
+            ""confidence"": 90.0,
+            ""sub_themes"": [""Feminism"", ""Women's Rights"", ""LGBTQ+"", ""Education"", ""Health""],
+            ""keywords"": [""Merino"", ""Karakul"", ""Settlement"", ""Afghan girls"", ""Robot contest"", ""Holmeshousecommentary"", ""TheBachelorette""],
+            ""sentiment"": ""positive""
+        },
+        {
+            ""name"": ""Entertainment"",
+            ""confidence"": 80.0,
+            ""sub_themes"": [""Music"", ""Movies"", ""TV Shows"", ""Sports"", ""Celebrity News""],
+            ""keywords"": [""KUWTK"", ""#27marathon27days"", ""#accidentalhaiku"", ""Snoop Dogg"", ""@sportrelief"", ""@bbcthree""],
+            ""sentiment"": ""positive""
+        },
+        {
+            ""name"": ""Science and Technology"",
+            ""confidence"": 85.0,
+            ""sub_themes"": [""Robotics"", ""AI"", ""Programming"", ""Mathematics"", ""Physics""],
+            ""keywords"": [""Robot dog"", ""Geek's best friend"", ""How to Make a Roguelike"", ""Cryptography"", ""Encryption""],
+            ""sentiment"": ""neutral""
+        },
+        {
+            ""name"": ""Personal Stories"",
+            ""confidence"": 80.0,
+            ""sub_themes"": [""Health"", ""Wellness"", ""Inspiration"", ""Motivation""],
+            ""keywords"": [""Bone marrow transplant"", ""Valentine's Day"", ""4/20"", ""Weed smoking friends"", ""Cigarettes"", ""Vagina""],
+            ""sentiment"": ""neutral""
+        }
+    ],
+    ""metadata"": {
+        ""tweet_length"": 350,
+        ""language"": ""English"",
+        ""contains_hashtags"": true,
+        ""contains_mentions"": true
+    }
+}",
+60,"{
+  ""themes"": [
+    {
+      ""name"": ""Social Media and News"",
+      ""confidence"": 85,
+      ""sub_themes"": [
+        ""Twitter reactions"",
+        ""News updates"",
+        ""Celebrity news"",
+        ""Hashtag campaigns""
+      ],
+      ""keywords"": [
+        ""Twitter"",
+        ""News"",
+        ""Celebrity"",
+        ""Hashtag""
+      ],
+      ""sentiment"": ""neutral""
+    },
+    {
+      ""name"": ""Humor and Entertainment"",
+      ""confidence"": 80,
+      ""sub_themes"": [
+        ""Jokes and memes"",
+        ""Music and videos"",
+        ""Comedy skits"",
+        ""Funny quotes""
+      ],
+      ""keywords"": [
+        ""Humor"",
+        ""Entertainment"",
+        ""Music"",
+        ""Video""
+      ],
+      ""sentiment"": ""positive""
+    },
+    {
+      ""name"": ""Personal Reminders and Support"",
+      ""confidence"": 75,
+      ""sub_themes"": [
+        ""Mental health support"",
+        ""Personal growth"",
+        ""Friendship and love"",
+        ""Motivation""
+      ],
+      ""keywords"": [
+        ""Support"",
+        ""Personal"",
+        ""Mental health"",
+        ""Motivation""
+      ],
+      ""sentiment"": ""positive""
+    },
+    {
+      ""name"": ""Politics and Activism"",
+      ""confidence"": 70,
+      ""sub_themes"": [
+        ""Social justice"",
+        ""Politics and government"",
+        ""Activism and protests"",
+        ""Current events""
+      ],
+      ""keywords"": [
+        ""Politics"",
+        ""Activism"",
+        ""Social justice"",
+        ""Government""
+      ],
+      ""sentiment"": ""negative""
+    },
+    {
+      ""name"": ""Art and Creativity"",
+      ""confidence"": 65,
+      ""sub_themes"": [
+        ""Art and design"",
+        ""Music and performance"",
+        ""Writing and literature"",
+        ""Crafts and DIY""
+      ],
+      ""keywords"": [
+        ""Art"",
+        ""Music"",
+        ""Writing"",
+        ""Crafts""
+      ],
+      ""sentiment"": ""positive""
+    }
+  ],
+  ""metadata"": {
+    ""tweet_length"": 100,
+    ""language"": ""multilingual"",
+    ""contains_hashtags"": true,
+    ""contains_mentions"": true
+  }
+}",
+60,"{
+    ""themes"": [
+        {
+            ""name"": ""Humor and Satire"",
+            ""confidence"": 85,
+            ""sub_themes"": [
+                ""Absurd tweets"",
+                ""Playful jokes"",
+                ""Parody and irony""
+            ],
+            ""keywords"": [
+                ""doo-dah"",
+                ""BONG BONG BONG"",
+                ""Sheriff of Snowboarder""
+            ],
+            ""sentiment"": ""positive""
+        },
+        {
+            ""name"": ""Politics and Current Events"",
+            ""confidence"": 90,
+            ""sub_themes"": [
+                ""US politics"",
+                ""Elections"",
+                ""Gun control""
+            ],
+            ""keywords"": [
+                ""Trump"",
+                ""Make America Great Again"",
+                ""OJ Simpson parole""
+            ],
+            ""sentiment"": ""neutral""
+        },
+        {
+            ""name"": ""Technology and Innovation"",
+            ""confidence"": 80,
+            ""sub_themes"": [
+                ""AI and machine learning"",
+                ""Blockchain and fintech"",
+                ""Robotics and automation""
+            ],
+            ""keywords"": [
+                ""AI"",
+                ""Blockchain"",
+                ""robots""
+            ],
+            ""sentiment"": ""neutral""
+        },
+        {
+            ""name"": ""Music and Arts"",
+            ""confidence"": 70,
+            ""sub_themes"": [
+                ""Music production"",
+                ""Art and design"",
+                ""Cultural events""
+            ],
+            ""keywords"": [
+                ""Whitney Houston"",
+                ""Trae Tha Truth"",
+                ""Linkin Park""
+            ],
+            ""sentiment"": ""positive""
+        },
+        {
+            ""name"": ""Food and Travel"",
+            ""confidence"": 60,
+            ""sub_themes"": [
+                ""Food reviews"",
+                ""Travel and tourism"",
+                ""Culinary arts""
+            ],
+            ""keywords"": [
+                ""Food Network"",
+                ""DDD"",
+                ""Kaosoi""
+            ],
+            ""sentiment"": ""positive""
+        },
+        {
+            ""name"": ""Social Issues and Activism"",
+            ""confidence"": 80,
+            ""sub_themes"": [
+                ""Mental health awareness"",
+                ""Gun control"",
+                ""Social justice""
+            ],
+            ""keywords"": [
+                ""Mental Health"",
+                ""Gun control"",
+                ""Social justice""
+            ],
+            ""sentiment"": ""negative""
+        }
+    ],
+    ""metadata"": {
+        ""tweet_length"": 100,
+        ""language"": ""English"",
+        ""contains_hashtags"": true,
+        ""contains_mentions"": true
+    }
+}",
+60,"{
+  ""themes"": [
+    {
+      ""name"": ""Entertainment"",
+      ""confidence"": 80,
+      ""sub_themes"": [""Movies"", ""Music"", ""Reality TV""],
+      ""keywords"": [""KUWTK"", ""Netflix"", ""Vine"", ""YouTube"", ""Movies"", ""Music""],
+      ""sentiment"": ""positive""
+    },
+    {
+      ""name"": ""Technology"",
+      ""confidence"": 70,
+      ""sub_themes"": [""Smartphones"", ""Social Media"", ""Tech News""],
+      ""keywords"": [""iOS"", ""Android"", ""Twitter"", ""Facebook""],
+      ""sentiment"": ""neutral""
+    },
+    {
+      ""name"": ""Sports"",
+      ""confidence"": 60,
+      ""sub_themes"": [""Basketball"", ""Football"", ""Baseball""],
+      ""keywords"": [""Sports"", ""Teams"", ""Players""],
+      ""sentiment"": ""positive""
+    },
+    {
+      ""name"": ""Politics"",
+      ""confidence"": 50,
+      ""sub_themes"": [""Government"", ""Elections"", ""Policy""],
+      ""keywords"": [""President"", ""Congress"", ""Vote""],
+      ""sentiment"": ""neutral""
+    },
+    {
+      ""name"": ""Travel"",
+      ""confidence"": 40,
+      ""sub_themes"": [""Airports"", ""Hotels"", ""Food""],
+      ""keywords"": [""Travel"", ""Vacation"", ""Destination""],
+      ""sentiment"": ""positive""
+    },
+    {
+      ""name"": ""Fashion"",
+      ""confidence"": 30,
+      ""sub_themes"": [""Clothing"", ""Beauty"", ""Style""],
+      ""keywords"": [""Fashion"", ""Style"", ""Beauty""],
+      ""sentiment"": ""positive""
+    },
+    {
+      ""name"": ""Health"",
+      ""confidence"": 20,
+      ""sub_themes"": [""Fitness"", ""Diet"", ""Wellness""],
+      ""keywords"": [""Health"", ""Fitness"", ""Diet""],
+      ""sentiment"": ""neutral""
+    },
+    {
+      ""name"": ""Social Issues"",
+      ""confidence"": 10,
+      ""sub_themes"": [""Environmentalism"", ""Racism"", ""Mental Health""],
+      ""keywords"": [""Social Justice"", ""Equality"", ""Human Rights""],
+      ""sentiment"": ""negative""
+    }
+  ],
+  ""metadata"": {
+    ""tweet_length"": 150,
+    ""language"": ""Multilingual"",
+    ""contains_hashtags"": true,
+    ""contains_mentions"": true
+  }
+}",
+60,"{
+  ""themes"": [
+    {
+      ""name"": ""Entertainment"",
+      ""confidence"": 85,
+      ""sub_themes"": [""Movies"", ""TV Shows"", ""Music"", ""Celebrities""],
+      ""keywords"": [""Cage"", ""WhiskeyTreaty Roadshow"", ""TheBachelorette"", ""KCRW"", ""Zac Efron""],
+      ""sentiment"": ""positive""
+    },
+    {
+      ""name"": ""Technology"",
+      ""confidence"": 80,
+      ""sub_themes"": [""Programming"", ""Gaming"", ""Artificial Intelligence""],
+      ""keywords"": [""SQLite"", ""window functions"", ""Facebook Hacks"", ""DARPA""],
+      ""sentiment"": ""neutral""
+    },
+    {
+      ""name"": ""Politics"",
+      ""confidence"": 78,
+      ""sub_themes"": [""Government"", ""Elections"", ""Social Issues""],
+      ""keywords"": [""#cdnpoli"", ""#SXSW"", ""@SadiqKhan"", ""Myanmar"", ""Rohingya""],
+      ""sentiment"": ""negative""
+    },
+    {
+      ""name"": ""Health"",
+      ""confidence"": 75,
+      ""sub_themes"": [""Fitness"", ""Wellness"", ""Nutrition""],
+      ""keywords"": [""reduce sugar intake"", ""yeast"", ""fungus"", ""bacteria""],
+      ""sentiment"": ""positive""
+    },
+    {
+      ""name"": ""Sports"",
+      ""confidence"": 72,
+      ""sub_themes"": [""Baseball"", ""Derby Stakes""],
+      ""keywords"": [""Los Angeles Angels"", ""Derby Stakes""],
+      ""sentiment"": ""positive""
+    },
+    {
+      ""name"": ""Art"",
+      ""confidence"": 70,
+      ""sub_themes"": [""Painting"", ""Sculpture"", ""Photography""],
+      ""keywords"": [""candidartichoke"", ""wit_haze"", ""Judah Friedlander""],
+      ""sentiment"": ""positive""
+    },
+    {
+      ""name"": ""Business"",
+      ""confidence"": 68,
+      ""sub_themes"": [""Entrepreneurship"", ""Marketing"", ""Finance""],
+      ""keywords"": [""Airbnb"", ""SFOX"", ""Crypto Dealer""],
+      ""sentiment"": ""positive""
+    },
+    {
+      ""name"": ""Travel"",
+      ""confidence"": 65,
+      ""sub_themes"": [""Vacation"", ""Adventure"", ""Culture""],
+      ""keywords"": [""Austin"", ""INOX"", ""B\\xe2\\x80\\x99luru"", ""Mumbai"", ""Noida""],
+      ""sentiment"": ""positive""
+    }
+  ],
+  ""metadata"": {
+    ""tweet_length"": 200,
+    ""language"": ""en"",
+    ""contains_hashtags"": true,
+    ""contains_mentions"": true
+  }
+}",
+60,,"Error code: 429 - {'error': {'message': 'Request was rejected due to request rate limiting. Your rate limits are 60 RPM (1 QPS) and 60000 TPM (1000 TPS). See details: https://docs.together.ai/docs/rate-limits', 'type': 'credit_limit', 'param': None, 'code': None}}"
+60,,"Error code: 429 - {'error': {'message': 'Request was rejected due to request rate limiting. Your rate limits are 60 RPM (1 QPS) and 60000 TPM (1000 TPS). See details: https://docs.together.ai/docs/rate-limits', 'type': 'credit_limit', 'param': None, 'code': None}}"
+60,"{
+  ""themes"": [
+    {
+      ""name"": ""Politics and Current Events"",
+      ""confidence"": 85,
+      ""sub_themes"": [
+        ""Middle East Conflict"",
+        ""US Politics"",
+        ""Global News""
+      ],
+      ""keywords"": [
+        ""Israel"",
+        ""Syria"",
+        ""Iran"",
+        ""BDS"",
+        ""Stalin""
+      ],
+      ""sentiment"": ""neutral""
+    },
+    {
+      ""name"": ""Entertainment and Pop Culture"",
+      ""confidence"": 70,
+      ""sub_themes"": [
+        ""Music"",
+        ""Movies"",
+        ""Fashion""
+      ],
+      ""keywords"": [
+        ""Nintendoswitch"",
+        ""Concert Tickets"",
+        ""Blockchain"",
+        ""VR"",
+        ""Cat Memes""
+      ],
+      ""sentiment"": ""positive""
+    },
+    {
+      ""name"": ""Technology and Innovation"",
+      ""confidence"": 65,
+      ""sub_themes"": [
+        ""Blockchain"",
+        ""AI"",
+        ""Robotics""
+      ],
+      ""keywords"": [
+        ""Blockchain"",
+        ""VR"",
+        ""Lego Curiosity""
+      ],
+      ""sentiment"": ""neutral""
+    },
+    {
+      ""name"": ""Health and Wellness"",
+      ""confidence"": 60,
+      ""sub_themes"": [
+        ""Self-Care"",
+        ""Nutrition"",
+        ""Fitness""
+      ],
+      ""keywords"": [
+        ""Eat something nourishing"",
+        ""Moisturize""
+      ],
+      ""sentiment"": ""positive""
+    },
+    {
+      ""name"": ""Personal Finance and Business"",
+      ""confidence"": 55,
+      ""sub_themes"": [
+        ""Personal Finance"",
+        ""Business"",
+        ""Innovation""
+      ],
+      ""keywords"": [
+        ""Small Business"",
+        ""Entrepreneurship"",
+        ""Blockchain-Powered VR""
+      ],
+      ""sentiment"": ""neutral""
+    },
+    {
+      ""name"": ""Personal Development and Philosophy"",
+      ""confidence"": 50,
+      ""sub_themes"": [
+        ""Personal Growth"",
+        ""Philosophy"",
+        ""Existentialism""
+      ],
+      ""keywords"": [
+        ""Questioning the value of one's own existence"",
+        ""Philosophical questions""
+      ],
+      ""sentiment"": ""neutral""
+    },
+    {
+      ""name"": ""Social Media and Memes"",
+      ""confidence"": 45,
+      ""sub_themes"": [
+        ""Social Media"",
+        ""Memes"",
+        ""Internet Culture""
+      ],
+      ""keywords"": [
+        ""Doo-dah"",
+        ""Cat Memes"",
+        ""#liberals""
+      ],
+      ""sentiment"": ""positive""
+    },
+    {
+      ""name"": ""Education and Learning"",
+      ""confidence"": 40,
+      ""sub_themes"": [
+        ""Education"",
+        ""Learning"",
+        ""Personal Development""
+      ],
+      ""keywords"": [
+        ""SBIR"",
+        ""Programme yourself for success"",
+        ""Book is of bull cows beef""
+      ],
+      ""sentiment"": ""neutral""
+    }
+  ],
+  ""metadata"": {
+    ""tweet_length"": 46,
+    ""language"": ""en"",
+    ""contains_hashtags"": true,
+    ""contains_mentions"": true
+  }
+}",
+60,,"Error code: 429 - {'error': {'message': 'Request was rejected due to request rate limiting. Your rate limits are 60 RPM (1 QPS) and 60000 TPM (1000 TPS). See details: https://docs.together.ai/docs/rate-limits', 'type': 'credit_limit', 'param': None, 'code': None}}"
+60,"{
+    ""themes"": [
+        {
+            ""name"": ""Politics and Governance"",
+            ""confidence"": 85,
+            ""sub_themes"": [""Pakistan Politics"", ""Government Failures"", ""Social Justice""],
+            ""keywords"": [""Sindh govt"", ""PTI Minority Wing"", ""Bishop Daniel Sadiq"", ""Arif Alvi"", ""Labour's Ken Livingstone""],
+            ""sentiment"": ""negative""
+        },
+        {
+            ""name"": ""Technology and Innovation"",
+            ""confidence"": 80,
+            ""sub_themes"": [""Artificial Intelligence"", ""Data Extraction"", ""Machine Learning""],
+            ""keywords"": [""Pirate Bay"", ""Monero Mining Software"", ""Conversational Systems"", ""Data Extractor Videos""],
+            ""sentiment"": ""neutral""
+        },
+        {
+            ""name"": ""Environment and Climate"",
+            ""confidence"": 70,
+            ""sub_themes"": [""Climate Change"", ""Sustainability"", ""Renewable Energy""],
+            ""keywords"": [""Hot town"", ""Summer in the city"", ""Dirty gritty"", ""Wine writing"", ""Climate Witness""],
+            ""sentiment"": ""neutral""
+        },
+        {
+            ""name"": ""Health and Wellness"",
+            ""confidence"": 60,
+            ""sub_themes"": [""Mental Health"", ""Physical Health"", ""Wellness""],
+            ""keywords"": [""Cancer treatment"", ""Parkinson's disease"", ""Hania Aguilar"", ""Rape and murder""],
+            ""sentiment"": ""negative""
+        },
+        {
+            ""name"": ""Sports and Entertainment"",
+            ""confidence"": 55,
+            ""sub_themes"": [""Sports"", ""Music"", ""Movies""],
+            ""keywords"": [""Marvel: Infinity War"", ""Justin Bieber"", ""Florence Foster Jenkins"", ""Sheriff of last quarter moon face""],
+            ""sentiment"": ""neutral""
+        }
+    ],
+    ""metadata"": {
+        ""tweet_length"": 30,
+        ""language"": ""en"",
+        ""contains_hashtags"": true,
+        ""contains_mentions"": true
+    }
+}",
+60,"{
+  ""themes"": [
+    {
+      ""name"": ""Fashion and Style"",
+      ""confidence"": 80,
+      ""sub_themes"": [""Women's Fashion"", ""Trendy Clothing"", ""Celebrity Style""],
+      ""keywords"": [""coat"", ""fashion"", ""style"", ""celebrity""],
+      ""sentiment"": ""positive""
+    },
+    {
+      ""name"": ""Entertainment and Media"",
+      ""confidence"": 90,
+      ""sub_themes"": [""Movies"", ""TV Shows"", ""Music"", ""Celebrity News""],
+      ""keywords"": [""music"", ""video"", ""movie"", ""celebrity""],
+      ""sentiment"": ""positive""
+    },
+    {
+      ""name"": ""Politics and Social Issues"",
+      ""confidence"": 85,
+      ""sub_themes"": [""Gun Control"", ""National Security"", ""Social Justice"", ""Government Policy""],
+      ""keywords"": [""gun"", ""violence"", ""politics"", ""social justice""],
+      ""sentiment"": ""negative""
+    },
+    {
+      ""name"": ""Technology and Innovation"",
+      ""confidence"": 95,
+      ""sub_themes"": [""Robotics"", ""Artificial Intelligence"", ""Machine Learning"", ""Innovation""],
+      ""keywords"": [""robot"", ""AI"", ""machine learning"", ""innovation""],
+      ""sentiment"": ""positive""
+    },
+    {
+      ""name"": ""Education and Learning"",
+      ""confidence"": 75,
+      ""sub_themes"": [""Education Policy"", ""Learning Strategies"", ""Personal Development"", ""Career Advice""],
+      ""keywords"": [""education"", ""learning"", ""development"", ""career""],
+      ""sentiment"": ""neutral""
+    }
+  ],
+  ""metadata"": {
+    ""tweet_length"": 300,
+    ""language"": ""English"",
+    ""contains_hashtags"": true,
+    ""contains_mentions"": true
+  }
+}",
+60,"{
+  ""themes"": [
+    {
+      ""name"": ""Politics"",
+      ""confidence"": 80,
+      ""sub_themes"": [
+        ""US Politics"",
+        ""Pakistan Politics"",
+        ""Social Justice""
+      ],
+      ""keywords"": [
+        ""Hillary Clinton"",
+        ""Donald Trump"",
+        ""Nawaz Sharif"",
+        ""PTI"",
+        ""PMLN"",
+        ""Social Justice""
+      ],
+      ""sentiment"": ""negative""
+    },
+    {
+      ""name"": ""Technology"",
+      ""confidence"": 70,
+      ""sub_themes"": [
+        ""Artificial Intelligence"",
+        ""Machine Learning"",
+        ""Mobile Technology""
+      ],
+      ""keywords"": [
+        ""Deep Learning"",
+        ""Dialog Systems"",
+        ""Mobile Technology"",
+        ""Emerging Trends""
+      ],
+      ""sentiment"": ""neutral""
+    },
+    {
+      ""name"": ""Social Media"",
+      ""confidence"": 85,
+      ""sub_themes"": [
+        ""Twitter"",
+        ""Influencer Marketing"",
+        ""Social Media Trends""
+      ],
+      ""keywords"": [
+        ""Twitter Trends"",
+        ""Influencer Marketing"",
+        ""Social Media Marketing""
+      ],
+      ""sentiment"": ""positive""
+    },
+    {
+      ""name"": ""News and Media"",
+      ""confidence"": 60,
+      ""sub_themes"": [
+        ""Breaking News"",
+        ""Media Coverage"",
+        ""Journalism""
+      ],
+      ""keywords"": [
+        ""News Stories"",
+        ""Media Coverage"",
+        ""Journalism""
+      ],
+      ""sentiment"": ""neutral""
+    },
+    {
+      ""name"": ""Hobbies and Interests"",
+      ""confidence"": 50,
+      ""sub_themes"": [
+        ""Travel"",
+        ""Food"",
+        ""Sports""
+      ],
+      ""keywords"": [
+        ""Travel"",
+        ""Food"",
+        ""Sports"",
+        ""Music"",
+        ""Movies""
+      ],
+      ""sentiment"": ""positive""
+    },
+    {
+      ""name"": ""Personal Development"",
+      ""confidence"": 40,
+      ""sub_themes"": [
+        ""Self-Improvement"",
+        ""Productivity"",
+        ""Motivation""
+      ],
+      ""keywords"": [
+        ""Personal Development"",
+        ""Self-Improvement"",
+        ""Productivity"",
+        ""Motivation""
+      ],
+      ""sentiment"": ""positive""
+    }
+  ],
+  ""metadata"": {
+    ""tweet_length"": 200,
+    ""language"": ""en"",
+    ""contains_hashtags"": true,
+    ""contains_mentions"": true
+  }
+}",
+60,"```json
+{
+    ""themes"": [
+        {
+            ""name"": ""Entertainment and Pop Culture"",
+            ""confidence"": 85,
+            ""sub_themes"": [
+                ""Music"",
+                ""Movies"",
+                ""TV Shows"",
+                ""Celebrities""
+            ],
+            ""keywords"": [
+                ""Despacito"",
+                ""Linkin Park"",
+                ""Homeland"",
+                ""GMA""
+            ],
+            ""sentiment"": ""positive""
+        },
+        {
+            ""name"": ""Technology and Innovation"",
+            ""confidence"": 80,
+            ""sub_themes"": [
+                ""Artificial Intelligence"",
+                ""Robotics"",
+                ""3D Printing"",
+                ""Emerging Technologies""
+            ],
+            ""keywords"": [
+                ""Chatbots"",
+                ""Robotics"",
+                ""3D printing"",
+                ""Emerging technologies""
+            ],
+            ""sentiment"": ""neutral""
+        },
+        {
+            ""name"": ""Social Issues and Politics"",
+            ""confidence"": 90,
+            ""sub_themes"": [
+                ""Environmentalism"",
+                ""Politics"",
+                ""Social Justice"",
+                ""Human Rights""
+            ],
+            ""keywords"": [
+                ""BillionTreeTsunami"",
+                ""MADD"",
+                ""New York Times"",
+                ""Environmentalism""
+            ],
+            ""sentiment"": ""positive""
+        },
+        {
+            ""name"": ""Food and Drink"",
+            ""confidence"": 75,
+            ""sub_themes"": [
+                ""Cuisine"",
+                ""Wine"",
+                ""Food Culture""
+            ],
+            ""keywords"": [
+                ""Wine"",
+                ""Foodie"",
+                ""Gourmet""
+            ],
+            ""sentiment"": ""positive""
+        },
+        {
+            ""name"": ""Sports and Fitness"",
+            ""confidence"": 70,
+            ""sub_themes"": [
+                ""Baseball"",
+                ""Cricket"",
+                ""Fitness""
+            ],
+            ""keywords"": [
+                ""Baseball"",
+                ""Cricket"",
+                ""Fitness""
+            ],
+            ""sentiment"": ""neutral""
+        },
+        {
+            ""name"": ""Travel and Adventure"",
+            ""confidence"": 60,
+            ""sub_themes"": [
+                ""Travel"",
+                ""Adventure"",
+                ""Exploration""
+            ],
+            ""keywords"": [
+                ""Travel"",
+                ""Adventure"",
+                ""Exploration""
+            ],
+            ""sentiment"": ""positive""
+        },
+        {
+            ""name"": ""Humor and Satire"",
+            ""confidence"": 65,
+            ""sub_themes"": [
+                ""Comedy"",
+                ""Satire"",
+                ""Humor""
+            ],
+            ""keywords"": [
+                ""Humor"",
+                ""Satire"",
+                ""Comedy""
+            ],
+            ""sentiment"": ""positive""
+        }
+    ],
+    ""metadata"": {
+        ""tweet_length"": 150,
+        ""language"": ""en"",
+        ""contains_hashtags"": true,
+        ""contains_mentions"": true
+    }
+}
+```
+This output represents the thematic analysis of the provided tweet dataset. The analysis identifies six main themes, each with sub-themes, keywords, and sentiment. The confidence level for each theme is also provided, indicating the degree of certainty in the theme's presence in the dataset.
+
+The themes identified are:
+
+1.  Entertainment and Pop Culture (85% confidence)
+    *   Sub-themes: Music, Movies, TV Shows, Celebrities
+    *   Keywords: Despacito, Linkin Park, Homeland, GMA
+    *   Sentiment: Positive
+2.  Technology and Innovation (80% confidence)
+    *   Sub-themes: Artificial Intelligence, Robotics, 3D Printing, Emerging Technologies
+    *   Keywords: Chatbots, Robotics, 3D printing, Emerging technologies
+    *   Sentiment: Neutral
+3.  Social Issues and Politics (90% confidence)
+    *   Sub-themes: Environmentalism, Politics, Social Justice, Human Rights
+    *   Keywords: BillionTreeTsunami, MADD, New York Times, Environmentalism
+    *   Sentiment: Positive
+4.  Food and Drink (75% confidence)
+    *   Sub-themes: Cuisine, Wine, Food Culture
+    *   Keywords: Wine, Foodie, Gourmet
+    *   Sentiment: Positive
+5.  Sports and Fitness (70% confidence)
+    *   Sub-themes: Baseball, Cricket, Fitness
+    *   Keywords: Baseball, Cricket, Fitness
+    *   Sentiment: Neutral
+6.  Travel and Adventure (60% confidence)
+    *   Sub-themes: Travel, Adventure, Exploration
+    *   Keywords: Travel, Adventure, Exploration
+    *   Sentiment: Positive
+7.  Humor and Satire (65% confidence)
+    *   Sub-themes: Comedy, Satire, Humor
+    *   Keywords: Humor, Satire, Comedy
+    *   Sentiment: Positive
+
+The metadata section provides information about the tweet dataset, including the average tweet length, language, presence of hashtags, and mentions.",
+60,,"Error code: 429 - {'error': {'message': 'Request was rejected due to request rate limiting. Your rate limits are 60 RPM (1 QPS) and 60000 TPM (1000 TPS). See details: https://docs.together.ai/docs/rate-limits', 'type': 'credit_limit', 'param': None, 'code': None}}"
+60,,"Error code: 429 - {'error': {'message': 'Request was rejected due to request rate limiting. Your rate limits are 60 RPM (1 QPS) and 60000 TPM (1000 TPS). See details: https://docs.together.ai/docs/rate-limits', 'type': 'credit_limit', 'param': None, 'code': None}}"
