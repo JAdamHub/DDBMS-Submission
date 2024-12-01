@@ -21,6 +21,10 @@ umap
 plotly
 nbformat
 tiktoken
+tqdm
+wordcloud
+nltk
+textblob
 wandb
 gradio
 transformers==4.45.2 # Bug/Issue with the latest version (4.46.2)
