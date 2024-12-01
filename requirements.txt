@@ -22,6 +22,9 @@ plotly
 nbformat
 tiktoken
 tqdm
+selenium
+nest_asyncio
+asyncio
 wordcloud
 nltk
 textblob
