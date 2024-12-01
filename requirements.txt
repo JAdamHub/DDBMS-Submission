@@ -1,4 +1,5 @@
 requests
+ipywidgets
 beautifulsoup4
 openai
 pydantic
