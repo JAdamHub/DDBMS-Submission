@@ -14,7 +14,6 @@ setfit
 datasets
 scikit-learn
 torch
-transformers
 pyvis 
 spacy
 umap
@@ -27,4 +26,5 @@ time
 json
 concurrent
 textwrap
+transformers==4.45.2
 twikit>=2.1.3
