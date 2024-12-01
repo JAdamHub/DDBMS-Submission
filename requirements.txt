@@ -20,11 +20,6 @@ umap
 plotly
 nbformat
 tiktoken
-queue
-time
-json
-concurrent
-textwrap
 wandb
 transformers==4.45.2
 twikit>=2.1.3
