@@ -1,4 +1,3 @@
-IPython
 requests
 beautifulsoup4
 openai
@@ -16,12 +15,16 @@ datasets
 scikit-learn
 torch
 transformers
-gradio
 pyvis 
 spacy
-xgboost
 umap
-bertopic
 plotly
 nbformat
 tiktoken
+threading
+queue
+time
+json
+concurrent
+textwrap
+twikit>=2.1.3
