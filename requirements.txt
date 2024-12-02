@@ -1,5 +1,5 @@
-IPython
 requests
+ipywidgets
 beautifulsoup4
 openai
 pydantic
@@ -15,13 +15,17 @@ setfit
 datasets
 scikit-learn
 torch
-transformers
-gradio
 pyvis 
 spacy
-xgboost
 umap
-bertopic
 plotly
 nbformat
 tiktoken
+tqdm
+wordcloud
+nltk
+textblob
+wandb
+gradio
+transformers==4.45.2 # Bug/Issue with the latest version (4.46.2)
+twikit>=2.1.3
