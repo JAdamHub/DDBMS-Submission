@@ -11,13 +11,11 @@ matplotlib
 scipy
 networkx
 community
-setfit
 datasets
 scikit-learn
 torch
 pyvis 
 spacy
-umap
 plotly
 nbformat
 tiktoken
@@ -30,5 +28,6 @@ nltk
 textblob
 wandb
 gradio
+setfit
 transformers==4.45.2 # Bug/Issue with the latest version (4.46.2)
 twikit>=2.1.3
