@@ -14,6 +14,7 @@ networkx
 community
 datasets
 scikit-learn
+contractions
 torch
 pyvis 
 spacy
