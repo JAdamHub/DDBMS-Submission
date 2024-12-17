@@ -21,7 +21,7 @@ The repository includes notebooks for data preprocessing, analysis, model traini
 - A **Twitter account** is required to scrape tweets.
 - You'll need to have Chrome installed on your machine to be able to load X (formerly Twitter) cookies for the data scraping 
 
-## ⚠️ **Important: Main Notebook Requires Local Execution**  
+### ⚠️ **Important: Main Notebook Requires Local Execution**  
 
 The **Main_Company_Twitter_Opinions.ipynb** notebook requires **local execution** on your own machine.  
 - Run locally on your machine (or one with access to Chrome) since this notebook opens a **(private) Chrome tab** to collect cookies for Twitter scraping.  
@@ -39,7 +39,7 @@ To ensure smooth execution of the notebooks, we recommend the following setup:
    - Connect to a GPU runtime:  
      - Navigate to **Runtime** > **Change runtime type** > Select **GPU**.  
 - Estimated runtime of `SetFit_Model_Train.ipynb` with 10,000 samples: 22 minuttes
----
+
 
 ### 🔑 **Together API Key Required**  
 To run parts of the analysis (e.g.,the sentiment analysis), you must provide a **Together API Key**.  
@@ -50,6 +50,7 @@ To run parts of the analysis (e.g.,the sentiment analysis), you must provide a *
 
 - Estimated costs for running 750 tweets: 0.03 dollars (so you'll have plenty of try's with 5$ free credit)
 
+---
 ---
 
 ### 1. 🧹 **EDA_training.ipynb**  
