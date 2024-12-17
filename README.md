@@ -26,6 +26,7 @@ The repository includes notebooks for data preprocessing, analysis, model traini
 The **Main_Company_Twitter_Opinions.ipynb** notebook requires **local execution** on your own machine.  
 - Run locally on your machine (or one with access to Chrome) since this notebook opens a **(private) Chrome tab** to collect cookies for Twitter scraping.  
 - Just ensure you have Google Chrome installed
+- Run in a virtual environment using Python version: 3.12.7 (tested)
 
 To ensure smooth execution of the notebooks, we recommend the following setup:
 ### 
