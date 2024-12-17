@@ -3,6 +3,7 @@ DDBMS
 
 ## File Structure 📂:
 
+```bash
 .
 ├── setfit_model/                       # Directory for SetFit model files
 ├── EDA_training.ipynb                  # Notebook for exploratory data analysis (EDA) and training preparation
@@ -22,3 +23,4 @@ DDBMS
 │   ├── userid_labels-(twi-bot_22).csv                  # UserID labels for bot detection
 │
 └── .gitignore                           # Specifies files to ignore in Git version control
+```
