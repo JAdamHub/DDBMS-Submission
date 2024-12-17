@@ -15,6 +15,42 @@ The project is centered around analyzing **company-related Twitter data** to:
 The repository includes notebooks for data preprocessing, analysis, model training, and evaluation, along with preprocessed datasets for ease of use.
 
 ---
+## 🛠️ **Environment and Requirements**
+
+### 🐦 **Twitter Profile Required + Chrome Browser**  
+- A **Twitter account** is required to scrape tweets.
+- You'll need to have Chrome installed on your machine to be able to load X (formerly Twitter) cookies for the data scraping 
+
+## ⚠️ **Important: Main Notebook Requires Local Execution**  
+
+The **Main_Company_Twitter_Opinions.ipynb** notebook requires **local execution** on your own machine.  
+- Run locally on your machine (or one with access to Chrome) since this notebook opens a **(private) Chrome tab** to collect cookies for Twitter scraping.  
+- Just ensure you have Google Chrome installed
+
+To ensure smooth execution of the notebooks, we recommend the following setup:
+### 
+### 💻 **⚠️ ONLY FOR `SetFit_Model_Train.ipynb` - Google Colab (Recommended)**  
+- For computationally intensive tasks like **SetFit model training** (e.g., `SetFit_Model_Train.ipynb`), we recommend running the notebooks in **Google Colab**.  
+- Google Colab provides free access to GPUs (T4), which will significantly speed up the model training process. 🚀  
+
+   **How to Run in Google Colab:**  
+   - Upload the notebook to Google Drive.  
+   - Open it in Google Colab.  
+   - Connect to a GPU runtime:  
+     - Navigate to **Runtime** > **Change runtime type** > Select **GPU**.  
+- Estimated runtime of `SetFit_Model_Train.ipynb` with 10,000 samples: 22 minuttes
+---
+
+### 🔑 **Together API Key Required**  
+To run parts of the analysis (e.g.,the sentiment analysis), you must provide a **Together API Key**.  
+- **Free API Key**: Sign up for a free account here: [Together API Sign-Up](https://api.together.ai/signin) (no credit card required 💳❌).  
+- **Setup**: Add your API Key to the designated variable `TOGETHER_API_KEY` in the notebook.  
+
+   **Note**: Adding a credit card increases your API rate limits, allowing faster data processing (from 60 to 600).
+
+- Estimated costs for running 750 tweets: 0.03 dollars (so you'll have plenty of try's with 5$ free credit)
+
+---
 
 ### 1. 🧹 **EDA_training.ipynb**  
 This notebook performs **Exploratory Data Analysis (EDA)** on the X (formerly Twitter) dataset.  
